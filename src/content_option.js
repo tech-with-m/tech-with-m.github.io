@@ -9,9 +9,9 @@ const introdata = {
     animated: {
         first: "I build enterprise solutions",
         second: "I develop scalable systems",
-        third: "I architect robust backends",
+        third: "I Create Tech Contents",
     },
-    description: "Senior Software Engineer with 4+ years of experience specializing in Java/Spring ecosystem, distributed systems, and cloud-native applications",
+    description: "Senior Software Engineer with 5+ years of experience specializing in Java/Spring ecosystem",
     your_img_url: require("./assets/images/mydesk.jpg"),
 };
 
@@ -81,17 +81,58 @@ const services = [{
 const dataportfolio = [
     {
         type: 'video',
-        videoId: 'yDF5V8hFNSM',
-        description: 'AV1 Encoding Explained | AV1 vs H265 | AV1 vs H264',
-        link: 'https://www.youtube.com/watch?v=yDF5V8hFNSM'
+        videoId: 'rkRIyRmbJ2o',
+        description: 'Setting up a New Spring Project from Scratch',
+        link: 'https://youtu.be/rkRIyRmbJ2o'
     },
     {
         type: 'video',
-        videoId: 'D53lAvrio0E',
-        description: 'How to Install NVM in Windows 11',
-        link: 'https://www.youtube.com/watch?v=D53lAvrio0E'
+        videoId: 'UlM7DsLxRO4',
+        description: 'Managing Database Transactions with Spring',
+        link: 'https://youtu.be/UlM7DsLxRO4'
+    },
+    {
+        type: 'video',
+        videoId: 'kDVRfzd1Ie8',
+        description: 'Using Cursor IDE with Spring',
+        link: 'https://youtu.be/kDVRfzd1Ie8'
+    },
+    {
+        type: 'video',
+        videoId: '_Jwxhcuhtr8',
+        description: 'Spring Boot Filter Chain Basics',
+        link: 'https://youtu.be/_Jwxhcuhtr8'
+    },
+    {
+        type: 'video',
+        videoId: 'Q8l2knCDDn8',
+        description: 'Custom Properties and Profiles in Spring',
+        link: 'https://youtu.be/Q8l2knCDDn8'
+    },
+    {
+        type: 'video',
+        videoId: '3vv0YPTC_2g',
+        description: 'Spring Bean Basics',
+        link: 'https://youtu.be/3vv0YPTC_2g'
+    },
+    {
+        type: 'video',
+        videoId: 'jMQIsuk7fBY',
+        description: 'Dependency Injection and IoC in Spring Boot',
+        link: 'https://youtu.be/jMQIsuk7fBY'
+    },
+    {
+        type: 'video',
+        videoId: 'ibHSzuZaKPM',
+        description: 'Response Entity in Spring',
+        link: 'https://youtu.be/ibHSzuZaKPM'
     }
 ];
+
+const youtubeChannel = {
+    url: "http://www.youtube.com/@TechWithM",
+    description: "Subscribe to my YouTube channel for in-depth tutorials on Spring, Java, and enterprise software development."
+};
 
 const contactConfig = {
     YOUR_EMAIL: "monir.sust14@gmail.com",
@@ -119,4 +160,5 @@ export {
     contactConfig,
     socialprofils,
     logotext,
+    youtubeChannel,
 };
