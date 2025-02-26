@@ -43,7 +43,30 @@ export const Portfolio = () => {
         <Helmet>
           <meta charSet="utf-8" />
           <title> Portfolio | {meta.title} </title>
-          <meta name="description" content={meta.description} />
+          <meta name="description" content="Explore Md. Moniruzzaman's portfolio of Java and Spring Boot projects, enterprise solutions, and software engineering work" />
+          {meta.keywords && <meta name="keywords" content={meta.keywords} />}
+          {meta.canonical && <link rel="canonical" href={`${meta.canonical}/portfolio`} />}
+          <script type="application/ld+json">
+            {`
+              {
+                "@context": "https://schema.org",
+                "@type": "CollectionPage",
+                "mainEntity": {
+                  "@type": "ItemList",
+                  "itemListElement": [
+                    ${dataportfolio.map((project, index) => `
+                      {
+                        "@type": "CreativeWork",
+                        "position": ${index + 1},
+                        "url": "${meta.canonical}/portfolio",
+                        "name": "${project.title}",
+                        "description": "${project.description}"
+                      }`).join(',')}
+                  ]
+                }
+              }
+            `}
+          </script>
         </Helmet>
         
         <Row className="mb-5 mt-3 pt-md-3">

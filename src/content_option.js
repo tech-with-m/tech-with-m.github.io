@@ -1,7 +1,10 @@
 const logotext = "MONIR";
 const meta = {
-    title: "Md. Moniruzzaman",
-    description: "I'm Md. Moniruzzaman, a Senior Software Engineer specializing in Java and Spring-based enterprise solutions, currently working at Red Dot Digital Ltd in Dhaka, Bangladesh",
+    title: "Md. Moniruzzaman | Senior Software Engineer | Java & Spring Expert",
+    description: "Senior Software Engineer with 5+ years of experience in Java, Spring Boot, and enterprise solutions. Specialist in scalable architecture, database design, and cloud-native applications. Currently at Red Dot Digital Ltd in Dhaka, Bangladesh.",
+    keywords: "Java Developer, Spring Boot, Software Engineer, Enterprise Solutions, Backend Development, Cloud Native, System Architecture, Dhaka, Bangladesh",
+    author: "Md. Moniruzzaman",
+    canonical: "https://tech-with-m.github.io",
 };
 
 const introdata = {
