@@ -23,25 +23,26 @@ const dataabout = {
     aboutme: "I'm a Senior Software Engineer with extensive experience in designing and implementing enterprise-scale applications. My expertise lies in Java/Spring ecosystem, distributed systems, and cloud-native technologies. I have successfully led multiple critical projects for major telecom operators and government institutions in Bangladesh. With a strong foundation in computer science and a research background in blockchain technology, I combine theoretical knowledge with practical engineering solutions to build robust and scalable systems.",
 };
 
-const worktimeline = [{
-        jobtitle: "Senior Software Engineer",
-        where: "Red Dot Digital Ltd.",
-        date: "2023-Present",
-    },
+const worktimeline = [
     {
         jobtitle: "Senior Software Engineer",
-        where: "Reve Systems",
-        date: "2022-2023",
+        where: "Red Dot Digital Ltd.",
+        date: "Mar 2023 - Apr 2025",
     },
     {
         jobtitle: "Software Engineer",
         where: "Commlink Infotech Ltd.",
-        date: "2021-2022",
+        date: "Mar 2021 - Feb 2023",
     },
     {
         jobtitle: "Software Engineer",
         where: "G Technologies",
-        date: "2019-2021",
+        date: "Nov 2019 - Feb 2021",
+    },
+    {
+        jobtitle: "Software Engineer Intern",
+        where: "Field Nation",
+        date: "Jun 2019 - Sep 2019",
     }
 ];
 

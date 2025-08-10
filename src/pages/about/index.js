@@ -37,17 +37,8 @@ export const About = () => {
                         "@type": "Organization",
                         "name": "Red Dot Digital Ltd."
                       },
-                      "startDate": "2023"
-                    },
-                    {
-                      "@type": "WorkExperience",
-                      "jobTitle": "Senior Software Engineer",
-                      "worksFor": {
-                        "@type": "Organization",
-                        "name": "Reve Systems"
-                      },
-                      "startDate": "2022",
-                      "endDate": "2023"
+                      "startDate": "2023-03",
+                      "endDate": "2025-04"
                     },
                     {
                       "@type": "WorkExperience",
@@ -56,8 +47,8 @@ export const About = () => {
                         "@type": "Organization",
                         "name": "Commlink Infotech Ltd."
                       },
-                      "startDate": "2021",
-                      "endDate": "2022"
+                      "startDate": "2021-03",
+                      "endDate": "2023-02"
                     },
                     {
                       "@type": "WorkExperience",
@@ -66,8 +57,18 @@ export const About = () => {
                         "@type": "Organization",
                         "name": "G Technologies"
                       },
-                      "startDate": "2019",
-                      "endDate": "2021"
+                      "startDate": "2019-11",
+                      "endDate": "2021-02"
+                    },
+                    {
+                      "@type": "WorkExperience",
+                      "jobTitle": "Software Engineer Intern",
+                      "worksFor": {
+                        "@type": "Organization",
+                        "name": "Field Nation"
+                      },
+                      "startDate": "2019-06",
+                      "endDate": "2019-09"
                     }
                   ],
                   "knowsAbout": ["Java", "Spring Boot", "Backend Development", "System Architecture", "Database Design", "Cloud Native", "DevOps"]
@@ -94,7 +95,7 @@ export const About = () => {
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+            <h3 className="color_sec py-4">Work Timeline</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
