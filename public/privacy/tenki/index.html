@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="天気ものがたりのプライバシーポリシー。位置情報、通知、Firebase、データの保存と削除について説明します。">
+  <link rel="canonical" href="https://tech-with-m.github.io/privacy/tenki/">
+  <title>プライバシーポリシー | 天気ものがたり</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f2f8fc; --surface:#fff; --text:#183548; --muted:#466071; --accent:#12648b; --soft:#e6f3fb; --border:#cddfe9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top right,var(--soft),transparent 38rem),var(--bg); color:var(--text); font-family:system-ui,-apple-system,"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; line-height:1.9; overflow-wrap:anywhere; }
+    a { color:var(--accent); text-underline-offset:.25em; }
+    a:hover { text-decoration-thickness:2px; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+    .shell { width:min(100% - 2rem,920px); margin:auto; padding:2rem 0 4rem; }
+    .topbar { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:3rem; }
+    .brand { display:flex; align-items:center; gap:.7rem; font-weight:750; text-decoration:none; color:var(--text); }
+    .mark { display:grid; place-items:center; width:2.7rem; height:2.7rem; border-radius:.9rem; background:var(--soft); color:var(--accent); font-size:1.4rem; }
+    .eyebrow { color:var(--accent); font-weight:700; letter-spacing:.12em; font-size:.8rem; }
+    h1 { font-size:clamp(1.9rem,5vw,3.2rem); line-height:1.5; margin:.5rem 0 1rem; }
+    h2 { font-size:clamp(1.2rem,3vw,1.5rem); line-height:1.6; margin:0 0 1rem; }
+    p,li { color:var(--muted); }
+    strong { color:var(--text); }
+    .meta,.footer { font-size:.88rem; color:var(--muted); }
+    .summary { margin:2rem 0; padding:1.4rem; background:var(--soft); border:1px solid var(--border); border-radius:1rem; }
+    .summary p { margin:.4rem 0 0; }
+    nav { display:flex; flex-wrap:wrap; gap:.7rem 1.4rem; margin:1.5rem 0; }
+    main { border:1px solid var(--border); border-radius:1.2rem; background:var(--surface); overflow:hidden; }
+    section { padding:2rem; border-bottom:1px solid var(--border); scroll-margin-top:1rem; }
+    section:last-child { border:0; }
+    section p:last-child,section ul:last-child { margin-bottom:0; }
+    ul { padding-left:1.3rem; }
+    li+li { margin-top:.7rem; }
+    .button { display:inline-block; padding:.65rem 1rem; border:1px solid var(--accent); border-radius:.65rem; font-weight:650; }
+    .footer { text-align:center; margin-top:2rem; }
+    @media(prefers-color-scheme:dark) { :root { --bg:#101c26; --surface:#172733; --text:#eef7fc; --muted:#bed0dc; --accent:#90cfee; --soft:#203a4c; --border:#365263; } }
+    @media(max-width:600px) { .shell { width:calc(100% - 1.25rem); padding-top:1.2rem; } section { padding:1.3rem; } .topbar { margin-bottom:2rem; } }
+    @media print { :root { --bg:white; --surface:white; --text:black; --muted:#222; --accent:#174c69; --soft:white; --border:#aaa; } .shell { width:100%; padding:0; } .topbar,nav { display:none; } main { overflow:visible; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="/"><span class="mark" aria-hidden="true">☀</span>天気ものがたり</a>
+      <a href="/">Tech With M</a>
+    </header>
+    <p class="eyebrow" lang="en">PRIVACY POLICY</p>
+    <h1>プライバシーポリシー</h1>
+    <p>本ポリシーは、Tech With M（開発者：Md Moniruzzaman）が提供する Android アプリ「天気ものがたり」の情報の取り扱いを説明します。</p>
+    <p class="meta">対象アプリ：com.tech_with_m.tenkimonogatari<br>施行・最終更新日：<time datetime="2026-09-13">2026年9月13日</time></p>
+    <aside class="summary">
+      <strong>大切なことを、先に。</strong>
+      <p>現在地の天気と地名を表示するため、位置情報を外部サービスに送信します。通知に同意した場合は、配信用の識別情報と位置情報を Firebase に登録します。現在のバージョンは広告を表示せず、個人情報を販売しません。</p>
+    </aside>
+    <nav aria-label="ページ内の案内">
+      <a href="#data">取り扱う情報</a><a href="#services">外部サービス</a><a href="#choices">許可の変更</a><a href="#deletion">保存・削除</a><a href="#contact">お問い合わせ</a>
+    </nav>
+    <main>
+      <section id="data">
+        <h2>1. 取り扱う情報と利用目的</h2>
+        <ul>
+          <li><strong>位置情報：</strong>許可に応じて、おおよその位置または正確な緯度・経度を取得します。現在地の天気予報、地名表示、地域に応じた通知に利用します。端末から取得できる直近の位置を利用する場合もあります。</li>
+          <li><strong>通知の登録情報：</strong>通知に同意し、必要な権限を許可すると、Firebase の匿名認証 ID、FCM 配信トークン、緯度・経度、地域名・市区町村名、端末のプラットフォーム、登録更新日時を取り扱います。天気のお知らせや季節のお便りの配信先管理に利用します。</li>
+          <li><strong>端末内の情報：</strong>天気予報、取得済みの位置・地名、設定、通知への同意状態、暦のデータなどを保存し、再表示やオフライン表示、ウィジェットに利用します。</li>
+          <li><strong>通信に伴う技術情報：</strong>接続先サービスは、IP アドレス、リクエスト内容、アプリ・端末に関する技術情報を、通信の提供、認証、安全性の確保などのために処理する場合があります。</li>
+          <li><strong>お問い合わせ：</strong>メールで連絡いただいた場合、メールアドレスとご相談内容を回答やご依頼の処理に利用します。</li>
+        </ul>
+        <p>氏名、メールアドレス、パスワードを入力するアカウント登録画面はありません。ただし、通知登録の保護には Firebase の匿名アカウントを利用します。「匿名認証」は、位置情報や通信情報を一切扱わないという意味ではありません。</p>
+      </section>
+      <section>
+        <h2>2. 更新とバックグラウンド処理</h2>
+        <p>天気はアプリの起動・復帰時や手動更新時などに取得します。Android のバックグラウンド処理やウィジェット更新では、保存済みの位置・予報を利用する場合があります。アプリを閉じるだけで、すべての通信が直ちに停止するわけではありません。</p>
+        <p>位置情報の許可は Android の設定で変更できます。本アプリは、移動経路を記録するための常時位置追跡を目的としていません。</p>
+      </section>
+      <section id="services">
+        <h2>3. 外部サービスへの送信</h2>
+        <ul>
+          <li><strong>Open-Meteo：</strong>緯度・経度を送信し、天気予報を取得します。<a href="https://open-meteo.com/en/terms">利用条件・プライバシー</a></li>
+          <li><strong>Geoapify：</strong>緯度・経度を送信し、日本語の地名を取得します。取得できない場合は Android の地名変換サービスを利用することがあります。<a href="https://www.geoapify.com/privacy-policy/">プライバシーポリシー</a></li>
+          <li><strong>Google Firebase：</strong>Authentication で匿名認証、Cloud Firestore で通知登録の保存、Cloud Messaging で通知配信を行います。Remote Config で祝日・暦などの設定を取得します。設定取得や配信には、Firebase のインストール識別子などの技術情報も使われます。<a href="https://firebase.google.com/support/privacy">Firebase のプライバシー情報</a>・<a href="https://policies.google.com/privacy">Google プライバシーポリシー</a></li>
+        </ul>
+        <p>通知登録は開発者が管理する Firebase プロジェクトに保存され、通知の配信処理で利用されます。各提供者が通信ログなどを保持することがあり、その取り扱いには各社のポリシーも適用されます。処理・保存は日本国外で行われる場合があります。</p>
+        <p>法令に基づく正当な要請への対応など、法律上必要な場合を除き、説明した目的と無関係な第三者への提供や、個人情報の販売は行いません。</p>
+      </section>
+      <section id="choices">
+        <h2>4. 許可と利用者の選択</h2>
+        <p>Android の「設定 → アプリ → 天気ものがたり」から、位置情報や通知の許可を変更できます。通知を断っても天気と季節のページは利用できます。位置情報を許可しない場合は、現在地の新しい予報や地名を取得できないことがあります。</p>
+        <p>通知または位置情報の許可を取り消すと、以後の通知登録の同期は停止します。ただし、送信待ちの処理や、すでに保存された登録情報が自動的に削除されるわけではありません。</p>
+      </section>
+      <section id="deletion">
+        <h2>5. データの保存と削除のご依頼</h2>
+        <p>端末内のキャッシュや設定は、更新や Android のアプリデータ削除・アンインストールによって削除されます。一方、Firebase の匿名アカウントと通知登録は端末とは別に保存されるため、アンインストールや通知の停止だけでは削除されません。</p>
+        <p>サーバー上の登録には、現時点で一律の日数による自動削除期限を設けていません。削除されるまで記録が残る場合があります。外部サービスの通信ログ等は、それぞれの保存方針に従います。</p>
+        <p>匿名アカウントおよび関連する通知登録の削除、情報の確認・訂正については、下記メールアドレスへ「天気ものがたり：データ削除」などの件名でご連絡ください。対象の匿名登録を安全に特定するため、必要最小限の追加情報をご相談する場合があります。メールアドレスだけでは匿名登録を特定できない場合があります。パスワードや身分証明書、正確な自宅住所を最初のメールに記載する必要はありません。</p>
+        <a class="button" href="mailto:techwithmonir@gmail.com?subject=Tenki%20Monogatari%20-%20Data%20deletion%20request">データ削除についてメールする</a>
+        <p>対象を確認できた場合、管理下の該当する匿名アカウントと通知登録を削除します。法令上必要な記録等を保持する必要がある場合は、その内容をご案内します。</p>
+      </section>
+      <section>
+        <h2>6. 広告・解析と安全性</h2>
+        <p>現在のバージョンでは広告表示・広告リクエストを無効にしており、開発者による利用行動の解析やクラッシュレポート収集のために Firebase Analytics・Crashlytics を利用していません。外部サービスが運用上扱う技術情報は、前述のとおりです。</p>
+        <p>通信には HTTPS などを利用し、通知登録には匿名認証と Firestore のアクセス制御を使用します。他の利用者の登録をアプリから読み取ったり書き換えたりできないよう制限しています。ただし、すべての通信や保存の安全性を完全に保証するものではありません。</p>
+      </section>
+      <section>
+        <h2>7. お子さまの利用とポリシーの変更</h2>
+        <p>未成年の方は、位置情報や通知の許可について保護者の方とご確認ください。お子さまの情報に関する懸念や削除のご相談も、下記窓口で受け付けます。</p>
+        <p>機能や情報の取り扱いが変わる場合は本ページを更新し、更新日を変更します。重要な変更については、必要に応じてアプリ内などでもお知らせします。</p>
+      </section>
+      <section id="contact">
+        <h2>8. お問い合わせ</h2>
+        <p>運営・開発：<strong>Tech With M / Md Moniruzzaman</strong><br>対象アプリ：<strong>天気ものがたり</strong><br>メール：<a href="mailto:techwithmonir@gmail.com">techwithmonir@gmail.com</a></p>
+        <p>このページは GitHub Pages で公開します。本ページには独自の解析スクリプトや広告を設置していません。ホスティングに伴う情報の処理については <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub のプライバシー声明</a>をご確認ください。外部リンクを開くと、そのサービスのポリシーが適用されます。</p>
+      </section>
+    </main>
+    <footer class="footer">&copy; 2026 Tech With M · 天気ものがたり</footer>
+  </div>
+</body>
+</html>
