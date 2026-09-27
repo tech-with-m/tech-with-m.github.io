@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17675b">
+  <meta name="description" content="হিসাব খাতার গোপনীয়তা নীতি। ফোনে রাখা আয়-খরচ, ঐচ্ছিক Google Drive ব্যাকআপ, অনুমতি ও তথ্য মুছে ফেলার নিয়ম জানুন।">
+  <link rel="canonical" href="https://tech-with-m.github.io/privacy/hisab-khata/">
+  <title>গোপনীয়তা নীতি | হিসাব খাতা</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#faf7ef; --surface:#fffdf7; --text:#243d38; --muted:#4d625b; --accent:#17675b; --soft:#e6f0e8; --border:#d8e2d9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top right,var(--soft),transparent 38rem),var(--bg); color:var(--text); font-family:"Noto Sans Bengali","Nirmala UI",system-ui,-apple-system,sans-serif; font-size:18px; line-height:1.95; overflow-wrap:anywhere; }
+    a { color:var(--accent); text-underline-offset:.25em; }
+    a:hover { text-decoration-thickness:2px; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+    .shell { width:min(100% - 2rem,920px); margin:auto; padding:2rem 0 4rem; }
+    .topbar { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:3rem; }
+    .brand { display:flex; align-items:center; gap:.7rem; font-weight:750; text-decoration:none; color:var(--text); }
+    .mark { display:grid; place-items:center; width:2.7rem; height:2.7rem; border-radius:.9rem; background:var(--soft); color:var(--accent); font-size:1.4rem; }
+    .eyebrow { color:var(--accent); font-weight:700; letter-spacing:normal; font-size:.8rem; }
+    h1 { font-size:clamp(1.9rem,5vw,3.2rem); line-height:1.5; margin:.5rem 0 1rem; }
+    h2 { font-size:clamp(1.2rem,3vw,1.5rem); line-height:1.6; margin:0 0 1rem; }
+    p,li { color:var(--muted); }
+    strong { color:var(--text); }
+    .meta,.footer { font-size:.88rem; color:var(--muted); }
+    .summary { margin:2rem 0; padding:1.4rem; background:var(--soft); border:1px solid var(--border); border-radius:1rem; }
+    .summary p { margin:.4rem 0 0; }
+    nav { display:flex; flex-wrap:wrap; gap:.7rem 1.4rem; margin:1.5rem 0; }
+    main { border:1px solid var(--border); border-radius:1.2rem; background:var(--surface); overflow:hidden; }
+    section { padding:2rem; border-bottom:1px solid var(--border); scroll-margin-top:1rem; }
+    section:last-child { border:0; }
+    section p:last-child,section ul:last-child { margin-bottom:0; }
+    ul { padding-left:1.3rem; }
+    li+li { margin-top:.7rem; }
+    .button { display:inline-block; padding:.65rem 1rem; border:1px solid var(--accent); border-radius:.65rem; font-weight:650; }
+    .footer { text-align:center; margin-top:2rem; }
+    @media(prefers-color-scheme:dark) { :root { --bg:#14221e; --surface:#1b2d27; --text:#edf5ed; --muted:#c0d2c7; --accent:#9bdec8; --soft:#233e32; --border:#3d584a; } }
+    @media(max-width:600px) { .shell { width:calc(100% - 1.25rem); padding-top:1.2rem; } section { padding:1.3rem; } .topbar { margin-bottom:2rem; } }
+    @media print { :root { --bg:white; --surface:white; --text:black; --muted:#222; --accent:#174c3b; --soft:white; --border:#aaa; } .shell { width:100%; padding:0; } .topbar,nav { display:none; } main { overflow:visible; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="mark" aria-hidden="true">খ</span><span>হিসাব খাতা</span></div>
+      <a href="https://tech-with-m.github.io/" lang="en">Tech With M</a>
+    </header>
+    <p class="eyebrow">আপনার হিসাব, আপনার নিয়ন্ত্রণে</p>
+    <h1>গোপনীয়তা নীতি</h1>
+    <p>হিসাব খাতা নিজের ও পরিবারের আয়-খরচ লিখে রাখার Android অ্যাপ। এটি <strong lang="en">Tech With M</strong> — ডেভেলপার <span lang="en">Md Moniruzzaman</span> — তৈরি ও পরিচালনা করেন। এই নীতিতে অ্যাপ কী তথ্য ব্যবহার করে, কোথায় রাখে এবং আপনি কীভাবে তা নিয়ন্ত্রণ করতে পারেন, তা জানানো হয়েছে।</p>
+    <p class="meta">অ্যাপ: হিসাব খাতা (Hisab Khata) · Android v1<br>প্যাকেজ: <span lang="en">com.tech_with_m.hisab_khata</span><br>কার্যকর ও সর্বশেষ হালনাগাদ: <time datetime="2026-09-27">২৭ সেপ্টেম্বর ২০২৬</time></p>
+    <aside class="summary"><strong>আগে জেনে নিন</strong><p>আপনার আয়-খরচের হিসাব ফোনেই থাকে। আপনি চাইলে নিজের Google Drive-এ ব্যাকআপ রাখতে পারেন। সাধারণ হিসাব রাখতে অ্যাকাউন্ট খোলা বা ইন্টারনেট লাগে না। প্রথম সংস্করণে হিসাব হাতে লিখতে হয়; অ্যাপ SMS পড়ে না।</p></aside>
+    <nav aria-label="এই পাতার বিষয়গুলো"><a href="#data">কী তথ্য রাখা হয়</a><a href="#drive">Drive ব্যাকআপ</a><a href="#choices">আপনার পছন্দ</a><a href="#deletion">তথ্য মুছে ফেলা</a><a href="#contact">যোগাযোগ</a></nav>
+    <main>
+<section id="data"><h2>১. ফোনে রাখা হিসাব</h2>
+<p>আপনার যোগ করা বা ব্যাকআপ থেকে ফিরিয়ে আনা লেনদেনের টাকার পরিমাণ, আয় বা খরচের ধরন, খাত, তারিখ, নোট, দোকান বা প্রতিষ্ঠানের তথ্য, খরচের সীমা এবং অ্যাপের পছন্দ এই ফোনের অ্যাপ-নির্দিষ্ট জায়গায় থাকে। হিসাব দেখানো, খোঁজা, সম্পাদনা ও সারসংক্ষেপ তৈরিতে এসব তথ্য ব্যবহার হয়। এগুলো Tech With M-এর নিজস্ব সার্ভারে পাঠানো হয় না। এই সংস্করণে বিজ্ঞাপন, AI-ভিত্তিক পরামর্শ, Firebase Analytics বা Crashlytics চালু নেই।</p>
+</section>
+<section id="drive"><h2>২. ইচ্ছা করলে Google Drive-এ ব্যাকআপ</h2>
+<p>ব্যাকআপ ঐচ্ছিক। আপনি Google অ্যাকাউন্ট যুক্ত করে অনুমতি দিলে অ্যাপ আপনার হিসাবের কপি সরাসরি আপনার Google Drive-এর অ্যাপের জন্য নির্দিষ্ট জায়গায় পাঠায়। হিসাব ফিরিয়ে আনতে সেখান থেকেই কপি নামানো হয়। Tech With M-এর নিজস্ব সার্ভারে আপনার ব্যাকআপ পাঠানো হয় না।</p>
+<p>অ্যাপ শুধু নিজের ব্যাকআপের জায়গা ব্যবহারের অনুমতি চায় (<span lang="en">drive.appdata</span>)। আপনার অন্য Drive ফাইল, ছবি, নথি বা Gmail পড়ার অনুমতি চায় না। এই ব্যাকআপ সাধারণ Drive ফাইলের তালিকায় দেখা যায় না। অ্যাকাউন্ট নির্বাচন ও অনুমোদন Google-এর মাধ্যমে হয়; আপনার Google পাসওয়ার্ড অ্যাপকে দিতে হয় না। অ্যাপ সংযোগের অবস্থা এবং Google থেকে অ্যাকাউন্টের ইমেইল পাওয়া গেলে তা এই ফোনে মনে রাখে। Google-এর দেওয়া অনুমোদন ব্যবহার করে ব্যাকআপের কাজ করে।</p>
+<p>ব্যাকআপে লেনদেন, হিসাবের খাত, খরচের সীমা এবং হিসাবের সঙ্গে সংরক্ষিত দোকান বা প্রতিষ্ঠানের তথ্য থাকতে পারে। অ্যাপের সেটিংস এতে থাকে না। একই Google অ্যাকাউন্টে অ্যাপটি সর্বশেষ ব্যাকআপ রাখে; নতুন ব্যাকআপ সফল হলে আগের কপি বদলে যায়।</p>
+<p>আপনি নির্ধারিত সময় পরপর ব্যাকআপ চালু করলে অ্যাপ বন্ধ থাকলেও Android-এর পটভূমির কাজের মাধ্যমে ব্যাকআপ হতে পারে। ইন্টারনেট, ব্যাটারি ও ফোনের বিধিনিষেধের কারণে নির্ধারিত সময়ে কাজটি নাও হতে পারে।</p>
+<p>Google থেকে পাওয়া তথ্য ও অনুমোদন শুধু সংযোগ, ব্যাকআপ ও হিসাব ফিরিয়ে আনার কাজে ব্যবহার হয়। এগুলো বিক্রি, বিজ্ঞাপন, ঋণযোগ্যতা নির্ধারণ বা AI মডেল প্রশিক্ষণের জন্য ব্যবহার করা হয় না। Google API থেকে পাওয়া তথ্য ব্যবহারে <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, প্রযোজ্য সীমিত ব্যবহারের শর্তসহ, অনুসরণ করা হয়।</p>
+</section>
+<section id="security"><h2>৩. গোপন বাক্য ও অ্যাপ লক</h2>
+<p>ব্যাকআপের জন্য গোপন বাক্য বা পাসফ্রেজ বেছে নিলে পাঠানোর আগে সেই কপি এনক্রিপ্ট করা হয়। পরে খুলতে একই গোপন বাক্য লাগে। এটি চালু না করলে ব্যাকআপকে গোপন বাক্য দিয়ে সুরক্ষিত বলা যাবে না। Google-এর সঙ্গে ব্যাকআপ আদান-প্রদান HTTPS সংযোগে হয়।</p>
+<p>স্বয়ংক্রিয় সুরক্ষিত ব্যাকআপের জন্য গোপন বাক্য Android Keystore-এর সাহায্যে সুরক্ষিত করে ফোনে রাখা হয়। গোপন বাক্য হারালে Tech With M সেটি উদ্ধার বা আপনার এনক্রিপ্ট করা ব্যাকআপ খুলে দিতে পারে না।</p>
+<p>সমর্থিত ফোনে অ্যাপ লক চালু করে ফোনের বায়োমেট্রিক বা ডিভাইস লক দিয়ে অ্যাপ খোলা সীমিত করা যায়। এটি নিজে থেকে স্থানীয় ডেটাবেসকে আলাদা পাসওয়ার্ড দিয়ে এনক্রিপ্ট করে না। ফোনের সুরক্ষাও গুরুত্বপূর্ণ।</p>
+<p>পরিচয় যাচাই Android পরিচালনা করে। অ্যাপ আপনার আঙুলের ছাপ বা মুখের বায়োমেট্রিক নমুনা সংগ্রহ করে না। কোনো সুরক্ষা ব্যবস্থাই সব ঝুঁকি পুরোপুরি দূর করতে পারে না।</p>
+</section>
+<section id="choices"><h2>৪. অনুমতি ও আপনার পছন্দ</h2>
+<p>এই প্রথম সংস্করণ স্বয়ংক্রিয়ভাবে SMS পড়ে না। হিসাব হাতে লিখতে হয়। খরচের সীমা-সংক্রান্ত সতর্কতা দেখাতে বিজ্ঞপ্তির অনুমতি চাইতে পারে। ইন্টারনেট ঐচ্ছিক Drive ব্যাকআপ ও পুনরুদ্ধারের জন্য ব্যবহার হয়।</p>
+<p>SMS, পরিচিতির তালিকা, অবস্থান, ক্যামেরা বা মাইক্রোফোনের অনুমতি চাওয়া হয় না। ফোনের সেটিংস থেকে বিজ্ঞপ্তির অনুমতি বদলাতে পারেন। অ্যাপ লক এবং নির্ধারিত ব্যাকআপের জন্য Android-এর সংশ্লিষ্ট সুবিধা ব্যবহার হয়।</p>
+<p>ব্যাকআপ বন্ধ রাখলেও হাতে আয়-খরচ লেখা যায়। ব্যাকআপ বন্ধ করলে নির্ধারিত স্বয়ংক্রিয় ব্যাকআপ বন্ধ হয় এবং অ্যাপের সংরক্ষিত গোপন বাক্য মুছে যায়। এতে Drive-এর আগের কপি মুছে যায় না বা Google-এর অনুমোদন বাতিল হয় না। আবার ব্যাকআপ চালু করলে গোপন বাক্যের সুরক্ষা আলাদা করে চালু করতে হয়।</p>
+</section>
+<section id="services"><h2>৫. বাইরের সেবা ও তথ্যের ব্যবহার</h2>
+<p>এই সংস্করণে বিজ্ঞাপন, ব্যবহার বিশ্লেষণ বা ক্র্যাশ রিপোর্ট সংগ্রহের জন্য Firebase Analytics বা Crashlytics চালু নেই। অ্যাপ থেকে আপনার হিসাবের তথ্য ডেভেলপারের কাছে স্বয়ংক্রিয়ভাবে পাঠানো হয় না এবং ব্যক্তিগত তথ্য বিক্রি করা হয় না।</p>
+<p>ঐচ্ছিক Google সেবা ব্যবহার করলে Google সংযোগ ও নিরাপত্তার প্রয়োজনে IP ঠিকানা, অনুমোদনের অনুরোধ এবং অ্যাপ বা ডিভাইস-সম্পর্কিত প্রযুক্তিগত তথ্য প্রক্রিয়া করতে পারে। সেসব তথ্যের ব্যবহার ও সংরক্ষণে <a href="https://policies.google.com/privacy">Google-এর গোপনীয়তা নীতি</a> প্রযোজ্য। সেবা প্রদানকারীর ব্যবস্থাপনা অনুযায়ী তথ্য বাংলাদেশের বাইরেও প্রক্রিয়া বা সংরক্ষণ হতে পারে।</p>
+<p>এই ওয়েবপাতা GitHub Pages-এ হোস্ট করা হয়। পাতাটিতে নিজস্ব বিজ্ঞাপন বা ব্যবহার বিশ্লেষণের স্ক্রিপ্ট নেই। হোস্টিং-সংক্রান্ত তথ্যের ব্যবহার সম্পর্কে <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub-এর গোপনীয়তা বিবৃতি</a> দেখুন। বাইরের লিংক খুললে সংশ্লিষ্ট সেবার নীতিও প্রযোজ্য হয়।</p>
+</section>
+<section id="deletion"><h2>৬. তথ্য কতদিন থাকে ও কীভাবে মুছবেন</h2>
+<p>অ্যাপ থেকে লেনদেন সম্পাদনা বা মুছে দিতে পারেন। ফোনের সেটিংস থেকে অ্যাপের ডেটা পরিষ্কার করলে স্থানীয় হিসাব মুছে যায়। ফোনে কোনো লেনদেন মুছে দিলেই Drive-এর আগের কপি বদলায় না; নতুন ব্যাকআপ সফল হলে সেই পরিবর্তন ব্যাকআপে যায়।</p>
+  <p>Google Drive-এর ব্যাকআপ একটি আলাদা কপি। অ্যাপ সরালে বা ফোনের অ্যাপের ডেটা পরিষ্কার করলে সেই কপি মুছে যায় না। আলাদাভাবে ব্যাকআপ মুছতে Google Drive-এর সেটিংসে অ্যাপ ব্যবস্থাপনা (Manage apps) থেকে হিসাব খাতার লুকানো অ্যাপের তথ্য মুছতে পারেন। নতুন কপি তৈরি হওয়া ঠেকাতে আগে অ্যাপের ব্যাকআপ বন্ধ করুন। <a href="https://myaccount.google.com/connections">Google অ্যাকাউন্টের তৃতীয় পক্ষের সংযোগ</a> ব্যবস্থাপনা থেকে হিসাব খাতার অনুমোদন সরাতে পারেন; অনুমোদন সরানো এবং ব্যাকআপ মুছে ফেলা আলাদা কাজ।</p>
+<p>ফোনের হিসাব আপনি মুছে ফেলা বা অ্যাপ সরানো পর্যন্ত থাকে। Drive-এর কপি নতুন ব্যাকআপ দিয়ে প্রতিস্থাপন বা আলাদাভাবে মুছে না দেওয়া পর্যন্ত থাকতে পারে, Google-এর নিজস্ব সংরক্ষণ নীতির অধীনে। প্রয়োজনীয় ব্যাকআপ ছাড়া স্থানীয় হিসাব মুছে ফেললে তা হারিয়ে যেতে পারে। হিসাব খাতায় আলাদা ডেভেলপার-পরিচালিত ব্যবহারকারী অ্যাকাউন্ট নেই।</p>
+</section>
+<section id="changes"><h2>৭. অপ্রাপ্তবয়স্কদের ব্যবহার ও নীতির পরিবর্তন</h2>
+<p>হিসাব খাতা মূলত নিজের বা পরিবারের আয়-খরচ পরিচালনার জন্য তৈরি। অপ্রাপ্তবয়স্ক ব্যবহারকারীরা Google অ্যাকাউন্ট যুক্ত করা বা তথ্য পাঠানোর আগে অভিভাবকের সঙ্গে আলোচনা করবেন এবং Google-এর প্রযোজ্য বয়স ও অ্যাকাউন্টের শর্ত অনুসরণ করবেন। শিশুর তথ্য নিয়ে উদ্বেগ থাকলে নিচের ঠিকানায় যোগাযোগ করুন।</p>
+<p>সুবিধা বা তথ্য ব্যবহারের নিয়ম বদলালে এই পাতা ও হালনাগাদের তারিখ সংশোধন করা হবে। গুরুত্বপূর্ণ পরিবর্তন হলে প্রয়োজন অনুযায়ী অ্যাপের ভেতরে জানানো হবে এবং নতুন অনুমতি প্রয়োজন হলে তা চাওয়া হবে।</p>
+</section>
+<section id="contact"><h2>৮. যোগাযোগ</h2>
+<p>পরিচালনা ও উন্নয়ন: <strong lang="en">Tech With M / Md Moniruzzaman</strong><br>অ্যাপ: <strong>হিসাব খাতা (Hisab Khata)</strong><br>ইমেইল: <a href="mailto:techwithmonir@gmail.com" lang="en">techwithmonir@gmail.com</a></p>
+<p>আপনি ইমেইলে যোগাযোগ করলে আপনার ইমেইল ঠিকানা ও পাঠানো তথ্য প্রশ্নের উত্তর বা অনুরোধের সমাধানে ব্যবহার করা হয়। প্রয়োজনীয় সহায়তা ও অনুসরণের জন্য যোগাযোগের তথ্য রাখা হতে পারে। সেই তথ্য মুছে ফেলার অনুরোধও এই ঠিকানায় জানাতে পারেন।</p>
+<p>হিসাব খাতা ব্যবহারের জন্য ব্যাংক বা মোবাইল আর্থিক সেবার PIN, পাসওয়ার্ড বা OTP দিতে হয় না। সহায়তার ইমেইলেও এসব গোপন তথ্য পাঠাবেন না।</p>
+</section>
+    </main>
+    <footer class="footer">&copy; ২০২৬ <span lang="en">Tech With M</span> · হিসাব খাতা · গোপনীয়তা নীতি</footer>
+  </div>
+</body>
+</html>
