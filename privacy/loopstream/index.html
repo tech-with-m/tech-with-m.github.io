@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Privacy Policy for the LoopStream Android application.">
+    <meta name="description" content="LoopStream Privacy Policy: selected videos, stream keys, Google AdMob advertising, consent choices, local diagnostics, and deleting your data.">
     <link rel="canonical" href="https://tech-with-m.github.io/privacy/loopstream/">
     <title>LoopStream Privacy Policy</title>
     <style>
@@ -194,13 +194,15 @@
 
       <div class="hero">
         <p class="eyebrow">Privacy Policy</p>
-        <h1>Your video stays in your publishing path.</h1>
+        <h1>LoopStream Privacy Policy</h1>
         <p class="intro">
           This Privacy Policy explains how the LoopStream Android application,
           developed by Tech With M, accesses and handles information when you
-          publish a locally selected video to YouTube or Twitch.
+          publish a selected video to YouTube or Twitch and use the app&apos;s
+          advertising-supported features. Earlier ad-free releases do not include
+          the advertising functionality described in sections 5 and 6.
         </p>
-        <p class="updated">Effective and last updated: August 27, 2026</p>
+        <p class="updated">Effective and last updated: October 29, 2026</p>
       </div>
 
       <aside class="summary">
@@ -208,7 +210,9 @@
         <p>
           LoopStream has no developer-operated upload or relay server. Encoding
           happens on your Android device, and the resulting stream is sent
-          directly to the platform you select.
+          directly to the platform you select. The current release also displays
+          Google AdMob ads. Google processes advertising-related information as
+          described below, with privacy choices available where applicable.
         </p>
       </aside>
 
@@ -216,7 +220,7 @@
         <section>
           <h2>1. About LoopStream</h2>
           <p>
-            LoopStream lets you select a compatible video stored on your device
+            LoopStream lets you select a compatible video using Android&apos;s file picker
             and publish it to YouTube or Twitch using a stream key that you
             provide. The app does not require a LoopStream account.
           </p>
@@ -227,8 +231,10 @@
           <ul>
             <li>
               <strong>Selected video and media information:</strong> LoopStream
-              accesses only the video you choose through Android&apos;s system file
-              picker. It reads the file and technical details such as its name,
+              reads the document you choose through Android&apos;s system file
+              picker. Your chosen document provider may supply a local or
+              cloud-backed file. The app may retain the system&apos;s read-access
+              permission to reopen that selected document. It reads technical details such as its name,
               duration, dimensions, codecs, frame rate, and audio format to check
               compatibility and prepare the stream.
             </li>
@@ -244,12 +250,25 @@
               have been completed. During a publishing session, it may temporarily
               retain the selected platform, file name, playback mode, duration,
               and session timing so it can explain if Android interrupted the
-              stream.
+              stream. Local information can also include the selected quality,
+              stop timer, the latest support report, privacy choices, and the last
+              interstitial-ad display time used to limit ad frequency.
             </li>
             <li>
               <strong>Network status:</strong> LoopStream checks whether a network
               connection is available so it can connect, publish, and report
               connection problems.
+            </li>
+            <li>
+              <strong>Support and diagnostics:</strong> The app keeps a local
+              report with app, device, Android version, media-format, encoder, and
+              session-performance details. It excludes your stream key, video
+              content, file name, and file URI. Selecting <strong>Copy details</strong>
+              copies this report to the Android clipboard so you can choose
+              whether to share it. These app-generated support reports are not
+              automatically uploaded to Tech With M. If you email us, we receive
+              your email address, message, and anything you choose to include.
+              Please do not send stream keys.
             </li>
           </ul>
         </section>
@@ -265,11 +284,13 @@
           <p>
             Publishing connections use RTMPS, which encrypts data in transit.
             Your stream key is included only in the direct connection to the
-            selected platform. If you enable <strong>Remember this key</strong>,
+            selected platform. When <strong>Remember this key</strong> is enabled,
             the key is encrypted with AES-GCM using a key protected by Android
-            Keystore and stored only on your device. If you do not enable that
-            option, LoopStream does not retain the key after it is no longer
-            needed for the session.
+            Keystore and stored in the app&apos;s private storage on your device.
+            This option is enabled by default and can be changed on the key-entry
+            screen. Turning it off and continuing from that screen removes the
+            saved key for that platform. The current setup and active publishing
+            session can still hold the key in memory while it is needed.
           </p>
         </section>
 
@@ -277,29 +298,75 @@
           <h2>4. Permissions and device access</h2>
           <p>LoopStream may use the following Android capabilities:</p>
           <ul>
-            <li><strong>Internet and network status:</strong> to connect directly to YouTube or Twitch and report connectivity.</li>
+            <li><strong>Internet and network status:</strong> to publish directly to YouTube or Twitch, report connectivity, and communicate with Google&apos;s advertising and consent services.</li>
             <li><strong>Notifications and foreground service:</strong> to keep an active, user-initiated publishing session visible and provide a Stop action while the app is in the background.</li>
             <li><strong>Wake lock:</strong> to reduce the chance that Android pauses the device during an active stream.</li>
             <li><strong>Selected-file access:</strong> to read only the video you explicitly choose through the Android system picker.</li>
+            <li><strong>Advertising identifiers and Android advertising services:</strong> permissions declared by the Google ads SDK support advertising delivery, measurement, attribution, and interest-based advertising. Availability and use depend on the Android version, device settings, and applicable privacy choices.</li>
           </ul>
           <p>
             LoopStream does not request access to your camera, microphone,
-            location, contacts, or all files on your device.
+            Android location permissions, contacts, or all files on your device.
+            Google can still estimate a general location from an IP address, as
+            explained in section 5.
           </p>
         </section>
 
         <section>
-          <h2>5. Collection, advertising, and analytics</h2>
+          <h2>5. Google AdMob advertising and related data</h2>
           <p>
-            Tech With M does not collect your video, stream key, account details,
-            device identifiers, usage analytics, advertising identifiers, or
-            crash reports through LoopStream. The app contains no advertising and
-            does not sell personal or sensitive information.
+            LoopStream uses Google AdMob and the Google Mobile Ads SDK to show
+            banner, interstitial, and native ads in the app. Google&apos;s SDK
+            collects and shares information for advertising, analytics, and fraud
+            prevention. This can include:
+          </p>
+          <ul>
+            <li><strong>Network information:</strong> IP address, which can indicate your approximate location.</li>
+            <li><strong>Interactions:</strong> app launches, taps, and ad or video views.</li>
+            <li><strong>Diagnostics:</strong> technical performance information, including launch timing, hangs, and energy use.</li>
+            <li><strong>Identifiers:</strong> Android advertising ID, app set ID, and other device or account identifiers where applicable.</li>
+          </ul>
+          <p>
+            These services can store or read identifiers and other information on
+            your device for ad delivery, measurement, and saved privacy choices.
+            Google&apos;s processing depends on its policies, your settings, and
+            applicable consent choices. Tech With M can view advertising reports
+            provided by AdMob. LoopStream does not attach your selected video,
+            file name, file URI, or stream key to ad requests. Advertising-related
+            analytics and diagnostics are separate from the local support report
+            described in section 2.
+          </p>
+          <ul>
+            <li><a href="https://policies.google.com/privacy" rel="noreferrer">Google Privacy Policy</a></li>
+            <li><a href="https://policies.google.com/technologies/ads" rel="noreferrer">How Google uses information for advertising</a></li>
+            <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noreferrer">Google Mobile Ads SDK data disclosure</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>6. Advertising consent and your choices</h2>
+          <p>
+            LoopStream uses Google&apos;s User Messaging Platform to check whether
+            a privacy message or consent choice is required for your location and
+            circumstances. Ads are requested only when that platform reports
+            that requests are permitted. This does not mean that everyone must
+            give consent in every region.
+          </p>
+          <ul>
+            <li>Where a consent message is presented, use its controls to review and make the available choices. You can revisit those choices through <strong>Ad privacy choices</strong> on the app&apos;s Home screen when that entry point is required.</li>
+            <li>Depending on your choices and Google&apos;s serving rules, advertising may be personalized, non-personalized, or limited. Non-personalized ads can still use technical information and identifiers for functions such as frequency limits and aggregate reporting.</li>
+            <li>You can manage or reset/delete your Android advertising ID in your device&apos;s privacy or ads settings, where supported. These controls do not necessarily stop all ads or all technical data processing.</li>
+          </ul>
+          <p>
+            Publishing is not conditional on an ad loading or displaying. Privacy
+            choices do not provide a universal ad-free mode. For additional Google
+            advertising controls, see
+            <a href="https://policies.google.com/technologies/ads" rel="noreferrer">Google&apos;s advertising information and controls</a>.
           </p>
         </section>
 
         <section>
-          <h2>6. Third-party platforms</h2>
+          <h2>7. Streaming platforms and other third parties</h2>
           <p>
             When you start publishing, you direct LoopStream to transmit the
             stream to YouTube or Twitch. Those services may process your stream,
@@ -318,11 +385,13 @@
         </section>
 
         <section>
-          <h2>7. Data retention and deletion</h2>
+          <h2>8. Data retention and deletion</h2>
           <ul>
             <li>LoopStream does not make a developer-controlled cloud copy of your selected video. Copies or recordings retained by YouTube or Twitch are controlled through your account and the selected platform&apos;s settings.</li>
-            <li>A remembered stream key remains encrypted on your device until you disable remembering it for that platform, clear the app&apos;s storage, or uninstall the app. You can also reset or revoke the key from the relevant platform dashboard.</li>
-            <li>Local preferences and temporary session information remain only as needed for the app&apos;s operation and are removed when you clear the app&apos;s storage or uninstall it.</li>
+            <li>A remembered stream key remains encrypted in app-private storage until you turn off <strong>Remember this key</strong> and continue from the key screen for that platform, clear the app&apos;s storage, or uninstall the app. You can also reset or revoke the key from the relevant platform dashboard.</li>
+            <li>Local preferences, session information, ad-frequency settings, and the latest support report are used for app operation. Clearing app storage or uninstalling removes the app-managed local copies. A report already copied to the clipboard or shared elsewhere is outside that local cleanup.</li>
+            <li>Google&apos;s advertising and consent services and the selected streaming platform retain and handle information under their own policies. Clearing LoopStream&apos;s storage or uninstalling it does not itself delete data already held by those providers. Use their privacy controls or request processes for that information.</li>
+            <li>If you contact Tech With M for support, we use the information you provide to respond and handle the request. You may contact us to request deletion of support messages, subject to applicable retention requirements.</li>
           </ul>
           <p>
             Because LoopStream provides no user account and Tech With M does not
@@ -332,18 +401,22 @@
         </section>
 
         <section>
-          <h2>8. Security</h2>
+          <h2>9. Security</h2>
           <p>
             LoopStream uses platform security features including Android Keystore,
-            encrypted RTMPS transport, app-private storage, and disabled Android
-            backups for app data. No electronic storage or transmission method is
+            encrypted RTMPS transport, app-private storage, and Android backup
+            settings configured to disable app backups and exclude remembered
+            stream keys and active-session records from device transfer.
+            Google states that data transmitted by
+            its Mobile Ads SDK is encrypted in transit using TLS. No electronic
+            storage or transmission method is
             completely secure, so you should keep stream keys private and reset a
             key immediately if you believe it has been exposed.
           </p>
         </section>
 
         <section>
-          <h2>9. Children&apos;s privacy</h2>
+          <h2>10. Children&apos;s privacy</h2>
           <p>
             LoopStream is not directed to children under 13. Users are responsible
             for meeting the age, account, content, and live-streaming requirements
@@ -353,7 +426,7 @@
         </section>
 
         <section>
-          <h2>10. Changes to this policy</h2>
+          <h2>11. Changes to this policy</h2>
           <p>
             This policy may be updated when LoopStream&apos;s functionality or data
             practices change. The effective date at the top of this page will be
@@ -363,7 +436,7 @@
         </section>
 
         <section>
-          <h2>11. Contact</h2>
+          <h2>12. Contact</h2>
           <p>
             LoopStream is developed by <strong>Tech With M</strong>. For privacy
             questions or requests, contact
