@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Woodwork: Cut List Optimizer by Tech With M. Learn about 100% offline local storage, cutting plans, exports, backups and data deletion.">
+  <link rel="canonical" href="https://tech-with-m.github.io/privacy/woodwork/">
+  <title>Woodwork Privacy Policy | Tech With M</title>
+  <style>
+    :root { color-scheme:light dark; --bg:#fbf9f6; --surface:#fff; --text:#231a15; --muted:#5c4d44; --accent:#8b181b; --soft:#f3ede4; --border:#dfd4c7; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top right,var(--soft),transparent 38rem),var(--bg); color:var(--text); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.8; overflow-wrap:anywhere; }
+    a { color:var(--accent); text-underline-offset:.25em; }
+    a:hover { text-decoration-thickness:2px; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+    .skip-link { position:absolute; top:-5rem; left:1rem; padding:.7rem 1rem; background:var(--surface); z-index:1; }
+    .skip-link:focus { top:1rem; }
+    .shell { width:min(100% - 2rem,920px); margin:auto; padding:2rem 0 4rem; }
+    .topbar { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:3rem; }
+    .brand { display:flex; align-items:center; gap:.7rem; font-weight:750; text-decoration:none; color:var(--text); }
+    .mark { display:grid; place-items:center; width:2.7rem; height:2.7rem; border-radius:.8rem; background:var(--accent); color:#fff; font-size:.85rem; font-weight:800; letter-spacing:.03em; }
+    .eyebrow { color:var(--accent); font-weight:750; letter-spacing:.12em; font-size:.8rem; text-transform:uppercase; }
+    h1 { font-size:clamp(2rem,5vw,3.4rem); line-height:1.2; letter-spacing:-.035em; margin:.5rem 0 1rem; }
+    h2 { font-size:clamp(1.2rem,3vw,1.5rem); line-height:1.4; margin:0 0 1rem; letter-spacing:-.02em; }
+    p,li { color:var(--muted); }
+    strong { color:var(--text); }
+    .intro { max-width:760px; font-size:1.08rem; }
+    .meta,.footer { font-size:.9rem; color:var(--muted); }
+    code { font-size:.95em; }
+    .summary { margin:2rem 0; padding:1.4rem; background:var(--soft); border:1px solid var(--border); border-radius:1rem; }
+    .summary p { margin:.4rem 0 0; }
+    nav { display:flex; flex-wrap:wrap; gap:.7rem 1.4rem; margin:1.5rem 0; }
+    main { border:1px solid var(--border); border-radius:1.2rem; background:var(--surface); overflow:hidden; }
+    section { padding:2rem; border-bottom:1px solid var(--border); scroll-margin-top:1rem; }
+    section:last-child { border:0; }
+    section p:first-of-type { margin-top:0; }
+    section p:last-child,section ul:last-child { margin-bottom:0; }
+    ul { padding-left:1.3rem; }
+    li+li { margin-top:.7rem; }
+    .footer { text-align:center; margin-top:2rem; }
+    @media(prefers-color-scheme:dark) { :root { --bg:#141110; --surface:#1e1a18; --text:#f5f0eb; --muted:#c2b5ab; --accent:#d97706; --soft:#2a2320; --border:#423933; } }
+    @media(max-width:600px) { .shell { width:calc(100% - 1.25rem); padding-top:1.2rem; } section { padding:1.3rem; } .topbar { margin-bottom:2rem; } }
+    @media print { :root { --bg:white; --surface:white; --text:black; --muted:#222; --accent:#8b181b; --soft:white; --border:#aaa; } .shell { width:100%; padding:0; } .topbar,nav,.skip-link { display:none; } main { overflow:visible; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#policy">Skip to privacy policy</a>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Tech With M home"><span class="mark" aria-hidden="true">WW</span>Woodwork</a>
+      <a href="/">Tech With M</a>
+    </header>
+
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>Woodwork Privacy Policy</h1>
+    <p class="intro">This policy explains how <strong>Woodwork</strong> (also published as <em>Cut List Optimizer: Woodwork</em> / <em>Workshop Cut Planner</em>), developed by <strong>Tech With M / Md Moniruzzaman</strong>, handles project data, cutting layouts, dimensions, and backups.</p>
+    <p class="meta">Android app: <code>com.tech_with_m.workshopcutplanner</code><br>Effective and last updated: <time datetime="2026-11-01">November 1, 2026</time></p>
+
+    <aside class="summary" aria-label="Privacy overview">
+      <strong>Your workshop data stays 100% on your device. Woodwork has no user accounts, no cloud servers, no advertising, and no Internet permission.</strong>
+      <p>All calculations, cutting diagrams, material inventory, and project specifications run locally in an offline database. You have exclusive control over your exported PDFs, DXF files, and portable backup archives.</p>
+    </aside>
+
+    <nav aria-label="Privacy policy sections">
+      <a href="#local-data">1. Data handled locally</a>
+      <a href="#offline-architecture">2. 100% Offline design</a>
+      <a href="#permissions">3. Device permissions</a>
+      <a href="#sharing">4. Exports and backups</a>
+      <a href="#collection">5. Ads &amp; analytics</a>
+      <a href="#deletion">6. Retention &amp; deletion</a>
+      <a href="#contact">7. Contact</a>
+    </nav>
+
+    <main id="policy" tabindex="-1">
+      <section id="local-data">
+        <h2>1. Information handled on your device</h2>
+        <p>Woodwork is a professional fabrication utility designed for cabinetmakers, carpenters, and woodworkers. All project information you enter is stored privately inside local SQLite storage on your Android device, including:</p>
+        <ul>
+          <li><strong>Project details:</strong> project names, job/reference numbers, customer names (optional), and timestamps.</li>
+          <li><strong>Parts and cut lists:</strong> part labels, sub-millimeter cutting dimensions (length, width, thickness), quantities, grain flow constraints, rotation preferences, joinery dados/grooves, and edge-banding assignments.</li>
+          <li><strong>Stock inventory and materials:</strong> sheet goods (plywood, MDF, melamine, acrylic), dimensional lumber/pipes (1D linear stock), physical dimensions, offcut remnants, defect exclusion zones, and material pricing configurations.</li>
+          <li><strong>Calculation parameters and cutting state:</strong> saw blade kerf widths, perimeter edge trim allowances, optimizer alternatives, active saw-floor progress checkpoints, and job quotation breakdowns.</li>
+        </ul>
+        <p>All bin-packing optimization, guillotine cut calculations, and linear lumber layouts are computed entirely on-device using local CPU algorithms. Tech With M never receives your measurements, job names, or shop specifications.</p>
+      </section>
+
+      <section id="offline-architecture">
+        <h2>2. 100% Offline architecture</h2>
+        <p>The release version of Woodwork does not request or possess Android's <code>android.permission.INTERNET</code> permission. The application cannot communicate with external servers, cloud databases, third-party analytics platforms, or online advertising networks.</p>
+        <p>You can operate Woodwork in remote jobsites, metal/wood shops without Wi-Fi, or in full Airplane Mode with complete functionality.</p>
+      </section>
+
+      <section id="permissions">
+        <h2>3. Device permissions and system features</h2>
+        <p>Woodwork adheres to the principle of least privilege:</p>
+        <ul>
+          <li><strong>No broad storage access:</strong> Woodwork does not request <code>MANAGE_EXTERNAL_STORAGE</code> or <code>READ_EXTERNAL_STORAGE</code>. It uses Android's modern Storage Access Framework (system document picker) exclusively when you choose to save an export or restore a backup.</li>
+          <li><strong>No camera, microphone, or contacts permissions:</strong> Woodwork does not request access to your device camera, audio microphone, contacts, calendar, or GPS hardware.</li>
+          <li><strong>On-device Text-to-Speech (Saw-Floor Audio DRO):</strong> The hands-free audio DRO feature uses Android's local Text-to-Speech service (such as Google Speech Services) to announce cut dimensions for hearing protection earmuffs. Prompts are generated locally on-device and are not recorded or transmitted over any network.</li>
+        </ul>
+      </section>
+
+      <section id="sharing">
+        <h2>4. Exports, CAD files, and portable backups</h2>
+        <p>All sharing and file generation actions are initiated explicitly by you:</p>
+        <ul>
+          <li><strong>Vector PDF cutting plans and labels:</strong> PDFs and printable part labels are compiled entirely on-device and shared via Android's native share sheet to the destination you choose (e.g., printer, local storage, messaging, or email).</li>
+          <li><strong>AutoCAD DXF and CSV files:</strong> DXF layout diagrams and CSV part lists are generated locally and saved to the folder you select via the system document picker.</li>
+          <li><strong>Portable JSON backups:</strong> You can export complete workspace archives. <strong>Backups are unencrypted JSON files</strong> containing your exact cut lists, stock inventory, and project notes. Please store your backup files securely.</li>
+        </ul>
+        <p>Woodwork does not operate an external backup server. The handling of exported files by third-party storage providers (e.g., Google Drive, Dropbox) or email recipients is governed by their respective privacy policies.</p>
+      </section>
+
+      <section id="collection">
+        <h2>5. Advertising, analytics, and third-party tracking</h2>
+        <p>Woodwork is a paid, professional-grade application built with zero tracking:</p>
+        <ul>
+          <li><strong>No advertising:</strong> Woodwork contains no advertising SDKs (no Google AdMob or banner networks).</li>
+          <li><strong>No usage tracking or analytics:</strong> We do not track which features you use, how long you use the app, or what cutting layouts you generate.</li>
+          <li><strong>No automated crash reporting services:</strong> There are no third-party crash loggers transmitting telemetry to developer servers.</li>
+          <li><strong>No sale of personal data:</strong> Tech With M does not collect, broker, or sell any personal information.</li>
+        </ul>
+        <p>Payment processing and app licensing are handled directly by Google Play. Woodwork does not receive or store your credit card or financial information. Please refer to the <a href="https://policies.google.com/privacy" rel="noreferrer" target="_blank">Google Privacy Policy</a> for details on Play Store purchase handling.</p>
+      </section>
+
+      <section id="deletion">
+        <h2>6. Data retention and deletion</h2>
+        <p>Because all data lives on your device, you have complete and immediate control over its retention:</p>
+        <ul>
+          <li><strong>In-app deletion:</strong> Deleting a project, part, or stock piece immediately removes it from the local SQLite database.</li>
+          <li><strong>Safety snapshots:</strong> Pre-restore safety snapshots stored in local private storage can be cleared anytime via <em>Settings &rarr; Workspace Backups &amp; Storage</em>.</li>
+          <li><strong>App uninstallation:</strong> Clearing app storage in Android Settings or uninstalling Woodwork permanently erases the local database, settings, and all saved cutting projects from your device.</li>
+          <li><strong>External files:</strong> Exported PDFs, DXF files, and backup archives saved to your device or cloud folders must be managed and deleted manually by you.</li>
+        </ul>
+        <p>There is no developer-side account or cloud database. Tech With M cannot access, view, recover, or remotely delete your local projects.</p>
+      </section>
+
+      <section id="support">
+        <h2>7. When you contact support</h2>
+        <p>If you email <a href="mailto:techwithmonir@gmail.com">techwithmonir@gmail.com</a> for technical support or feedback, we receive your email address, message body, and any attachments you voluntarily share. We use this information solely to respond to your inquiry and troubleshoot your issue. We delete support correspondence upon request.</p>
+      </section>
+
+      <section id="security">
+        <h2>8. Data security</h2>
+        <p>Woodwork relies on Android's application sandboxing, which prevents other standard applications on your device from accessing its private database. The physical security of your local data depends on your device's lock screen protection and device encryption.</p>
+      </section>
+
+      <section id="children">
+        <h2>9. Children's privacy</h2>
+        <p>Woodwork is a specialized woodworking and manufacturing utility intended for adult craftspeople and fabrication shops. It is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+      </section>
+
+      <section id="website">
+        <h2>10. Website and hosting disclosure</h2>
+        <p>This privacy policy page is hosted on GitHub Pages. GitHub may log visitor IP addresses for network security and operational diagnostics in accordance with the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer" target="_blank">GitHub Privacy Statement</a>. Tech With M does not place advertising, analytics scripts, or tracking cookies on this page.</p>
+      </section>
+
+      <section id="changes">
+        <h2>11. Changes to this policy</h2>
+        <p>We may periodically update this policy if app features evolve. The current policy will always be published at this URL with the updated revision date. Material changes will be highlighted in app release notes on Google Play.</p>
+      </section>
+
+      <section id="contact">
+        <h2>12. Contact us</h2>
+        <p>Developer: <strong>Tech With M / Md Moniruzzaman</strong><br>
+        Application: <strong>Woodwork</strong> (<code>com.tech_with_m.workshopcutplanner</code>)<br>
+        Privacy &amp; Support Inquiries: <a href="mailto:techwithmonir@gmail.com">techwithmonir@gmail.com</a><br>
+        Website: <a href="https://tech-with-m.github.io/">https://tech-with-m.github.io/</a></p>
+      </section>
+    </main>
+
+    <footer class="footer">&copy; 2026 Tech With M. All rights reserved.</footer>
+  </div>
+</body>
+</html>
