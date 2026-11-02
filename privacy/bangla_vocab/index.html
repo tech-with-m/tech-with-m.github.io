@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for ParaNai Vocab (প্যারা নাই Vocab): IELTS Vocabulary Flashcards by Tech With M. Learn about local study progress, offline storage, text-to-speech audio, and data privacy.">
+  <link rel="canonical" href="https://tech-with-m.github.io/privacy/bangla_vocab/">
+  <title>ParaNai Vocab Privacy Policy | Tech With M</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f3f9f8;
+      --surface: #ffffff;
+      --text: #133330;
+      --muted: #41625f;
+      --accent: #0f766e;
+      --soft: #e2f4f2;
+      --border: #c8e3e0;
+      --link: #0d9488;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top right, var(--soft), transparent 38rem), var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.8;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--link);
+      text-underline-offset: 0.25em;
+    }
+
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+
+    .skip-link {
+      position: absolute;
+      top: -5rem;
+      left: 1rem;
+      padding: 0.7rem 1rem;
+      background: var(--surface);
+      z-index: 1;
+    }
+
+    .skip-link:focus { top: 1rem; }
+
+    .shell {
+      width: min(100% - 2rem, 920px);
+      margin: auto;
+      padding: 2.5rem 0 4.5rem;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 750;
+      text-decoration: none;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 0.8rem;
+      background: linear-gradient(145deg, #0f766e, #094e49);
+      box-shadow: 0 0.5rem 1.5rem rgba(15, 118, 110, 0.25);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+    }
+
+    .home-link {
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      margin: 0 0 0.5rem;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5.5vw, 3.4rem);
+      line-height: 1.18;
+      letter-spacing: -0.035em;
+      margin: 0.5rem 0 1rem;
+    }
+
+    h2 {
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
+      line-height: 1.35;
+      margin: 0 0 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    p, li { color: var(--muted); }
+    strong { color: var(--text); }
+
+    .intro {
+      max-width: 760px;
+      font-size: 1.08rem;
+    }
+
+    .meta {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin-top: 1rem;
+    }
+
+    code {
+      font-size: 0.92em;
+      background: var(--soft);
+      padding: 0.15rem 0.4rem;
+      border-radius: 0.35rem;
+    }
+
+    .summary {
+      margin: 2rem 0;
+      padding: 1.4rem 1.6rem;
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+    }
+
+    .summary strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-size: 1.05rem;
+    }
+
+    .summary p { margin: 0; }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1.5rem;
+      margin: 1.8rem 0;
+    }
+
+    main {
+      border: 1px solid var(--border);
+      border-radius: 1.25rem;
+      background: var(--surface);
+      overflow: hidden;
+      box-shadow: 0 1.5rem 4rem rgba(15, 118, 110, 0.06);
+    }
+
+    section {
+      padding: 2.2rem;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 1.5rem;
+    }
+
+    section:last-child { border-bottom: 0; }
+    section p:first-of-type { margin-top: 0; }
+    section p:last-child, section ul:last-child { margin-bottom: 0; }
+
+    ul { padding-left: 1.35rem; }
+    li + li { margin-top: 0.75rem; }
+
+    .footer {
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #091414;
+        --surface: #102120;
+        --text: #e8f7f5;
+        --muted: #a6c9c5;
+        --accent: #2dd4bf;
+        --soft: #143230;
+        --border: #1e4542;
+        --link: #5eead4;
+      }
+      .mark {
+        background: linear-gradient(145deg, #0d9488, #0f766e);
+        box-shadow: 0 0.5rem 1.5rem rgba(13, 148, 136, 0.3);
+      }
+      main {
+        box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.35);
+      }
+      code {
+        background: #143230;
+        color: #e8f7f5;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .shell {
+        width: calc(100% - 1.5rem);
+        padding-top: 1.5rem;
+      }
+      section { padding: 1.5rem; }
+      .topbar { margin-bottom: 2rem; }
+      .summary { padding: 1.2rem; }
+    }
+
+    @media print {
+      :root {
+        --bg: white;
+        --surface: white;
+        --text: black;
+        --muted: #333;
+        --accent: #0f766e;
+        --soft: white;
+        --border: #ccc;
+      }
+      .shell { width: 100%; padding: 0; }
+      .topbar, nav, .skip-link { display: none; }
+      main { overflow: visible; border: 0; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#policy">Skip to privacy policy</a>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="https://tech-with-m.github.io/" aria-label="Tech With M home">
+        <span class="mark" aria-hidden="true">PN</span>
+        <span>ParaNai Vocab</span>
+      </a>
+      <a class="home-link" href="https://tech-with-m.github.io/">Tech With M</a>
+    </header>
+
+    <div class="hero">
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>ParaNai Vocab Privacy Policy</h1>
+      <p class="intro">
+        This Privacy Policy explains how <strong>ParaNai Vocab (প্যারা নাই Vocab - IELTS Vocabulary Flashcards)</strong>,
+        developed by <strong>Tech With M / Md Moniruzzaman</strong>, handles user data, on-device storage,
+        and audio features.
+      </p>
+      <p class="meta">
+        Application ID: <code>com.tech_with_m.ielts_deshi_vocab</code><br>
+        Effective and last updated: <time datetime="2026-11-02">November 2, 2026</time>
+      </p>
+    </div>
+
+    <aside class="summary" aria-label="Privacy overview">
+      <strong>Your learning progress stays entirely on your device.</strong>
+      <p>
+        ParaNai Vocab is an offline-first educational flashcard app. We do not require an account,
+        we do not collect personal contact information, and we do not transmit your study activity to any external server.
+      </p>
+    </aside>
+
+    <nav aria-label="Privacy policy navigation">
+      <a href="#local-data">Local Data</a>
+      <a href="#permissions">Permissions &amp; Audio</a>
+      <a href="#third-party">Third Parties</a>
+      <a href="#deletion">Data Deletion</a>
+      <a href="#children">Children&apos;s Privacy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main id="policy" tabindex="-1">
+      <section id="local-data">
+        <h2>1. Information Handled on Your Device</h2>
+        <p>
+          ParaNai Vocab operates locally on your Android device. To power our spaced repetition system
+          and track your learning progress, the app stores the following data in private app storage:
+        </p>
+        <ul>
+          <li><strong>Study Progress:</strong> Records of which words you marked as &ldquo;I Know This&rdquo; or &ldquo;Don&apos;t Know&rdquo;, your current mastery stage (0 to 3), consecutive correct counts, and review timestamps.</li>
+          <li><strong>User Preferences:</strong> Local configuration options such as preferred speech rate, volume, and card review modes.</li>
+        </ul>
+        <p>
+          All learning records are stored exclusively on your device using Android&apos;s private application storage.
+          Tech With M does not operate a user database, and your study statistics are never automatically synced, uploaded, or viewed by us.
+        </p>
+      </section>
+
+      <section id="accounts">
+        <h2>2. No Account or Registration Required</h2>
+        <p>
+          You do not need to register, create a profile, or log in to use ParaNai Vocab. The app does not request or collect:
+        </p>
+        <ul>
+          <li>Your name, email address, phone number, or physical address.</li>
+          <li>Passwords, social media profiles, or financial information.</li>
+          <li>Device contacts, calendars, or stored media files.</li>
+        </ul>
+      </section>
+
+      <section id="permissions">
+        <h2>3. Permissions &amp; Text-to-Speech (TTS)</h2>
+        <p>
+          ParaNai Vocab adheres strictly to the principle of minimal device permissions:
+        </p>
+        <ul>
+          <li><strong>Audio Pronunciation (Text-to-Speech):</strong> When you tap the audio icon, the app utilizes Android&apos;s built-in Text-to-Speech (TTS) engine to speak English words aloud. Speech generation takes place locally on your device. No voice or audio is recorded or stored.</li>
+          <li><strong>Internet Access:</strong> Basic network capability may be declared for standard Android system checks and Google Play ecosystem compatibility. The core flashcard learning system, all 800 words, mnemonics, definitions, and IPA transcriptions are bundled with the app and function 100% offline.</li>
+          <li><strong>No Sensitive Permissions:</strong> The app does not request access to your camera, microphone, GPS/fine location, contacts, phone calls, SMS, or external storage files.</li>
+        </ul>
+      </section>
+
+      <section id="third-party">
+        <h2>4. Third-Party Analytics &amp; Advertising</h2>
+        <p>
+          ParaNai Vocab Version 1.0.0 does not include third-party behavioral trackers, marketing SDKs, or in-app advertising networks. We do not sell, rent, or trade user data to data brokers or third parties.
+        </p>
+      </section>
+
+      <section id="deletion">
+        <h2>5. Data Retention &amp; Deletion</h2>
+        <p>
+          Because all progress is stored solely in your device&apos;s private storage:
+        </p>
+        <ul>
+          <li>You can reset your learning progress at any time by going to <strong>Android Settings &gt; Apps &gt; প্যারা নাই Vocab &gt; Storage &gt; Clear Data</strong>.</li>
+          <li>Uninstalling the app immediately deletes all local flashcard progress and saved preferences from your device.</li>
+          <li>Because Tech With M does not retain a server-side account or database for you, there are no remote accounts or cloud records to delete.</li>
+        </ul>
+      </section>
+
+      <section id="children">
+        <h2>6. Children&apos;s Privacy</h2>
+        <p>
+          ParaNai Vocab is an educational vocabulary study app designed for students and learners of English. It does not solicit or collect personal information from individuals of any age, including children under 13.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>7. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect app updates or legal requirements. Any modifications will be posted to this page with an updated revision date.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>8. Contact Us</h2>
+        <p>
+          If you have questions, feedback, or inquiries regarding this Privacy Policy or ParaNai Vocab, please contact:
+        </p>
+        <p>
+          <strong>Developer:</strong> Tech With M / Md Moniruzzaman<br>
+          <strong>Email:</strong> <a href="mailto:techwithmonir@gmail.com">techwithmonir@gmail.com</a><br>
+          <strong>Website:</strong> <a href="https://tech-with-m.github.io/">https://tech-with-m.github.io/</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      &copy; 2026 Tech With M. All rights reserved. &bull; ParaNai Vocab Privacy Policy
+    </footer>
+  </div>
+</body>
+</html>
