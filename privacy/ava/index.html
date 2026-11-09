@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hava uygulamasının konum, hava tahmini, bildirimler, Google AdMob ve veri silme talepleriyle ilgili gizlilik politikası.">
+    <link rel="canonical" href="https://tech-with-m.github.io/privacy/ava/">
+    <title>Hava Gizlilik Politikası</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --background: #f6f0e6;
+        --surface: #fffaf4;
+        --text: #2e2422;
+        --muted: #64514b;
+        --accent: #a5212b;
+        --border: #e6d6ca;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background: var(--background);
+        color: var(--text);
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        line-height: 1.65;
+      }
+
+      .page-shell {
+        width: min(100% - 2rem, 780px);
+        margin: 0 auto;
+        padding: clamp(1.75rem, 6vw, 4rem) 0 2.5rem;
+      }
+
+      header { margin-bottom: 2rem; }
+
+      .brand {
+        color: var(--accent);
+        font-weight: 750;
+      }
+
+      h1, h2 {
+        line-height: 1.2;
+        margin: 0;
+      }
+
+      h1 { font-size: clamp(2rem, 6vw, 3.25rem); }
+      h2 { font-size: clamp(1.2rem, 4vw, 1.55rem); }
+      .updated, footer { color: var(--muted); }
+
+      main {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+      }
+
+      section { padding: clamp(1.15rem, 4vw, 2rem); }
+      section + section { border-top: 1px solid var(--border); }
+      section > :last-child { margin-bottom: 0; }
+      ul { padding-inline-start: 1.3rem; }
+      li + li { margin-top: 0.65rem; }
+
+      a {
+        color: var(--accent);
+        overflow-wrap: anywhere;
+        text-underline-offset: 0.18em;
+      }
+
+      footer {
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background: #211a18;
+          --surface: #2d2320;
+          --text: #fcf1e9;
+          --muted: #d0bcb3;
+          --accent: #ff9aa2;
+          --border: #543c35;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header>
+        <p class="brand">Tech With M</p>
+        <h1>Hava Gizlilik Politikası</h1>
+        <p>Bu politika, Tech With M tarafından geliştirilen Hava Android uygulamasının hangi bilgileri kullandığını, bu bilgileri kimlerle paylaştığını ve gizlilik tercihlerinizi nasıl yönetebileceğinizi açıklar. Hava’yı kullanmak için hesap açmanız gerekmez.</p>
+        <p class="updated">Son güncelleme <time datetime="2026-11-10">10 Kasım 2026</time></p>
+      </header>
+
+      <main>
+        <section>
+          <h2>Konum ve hava tahmini</h2>
+          <p>Android’de konum izni verdiğinizde Hava, uygulamayı açtığınızda veya uygulamaya geri döndüğünüzde cihazınızın konumunu alabilir. Konumun hassasiyeti verdiğiniz izne bağlıdır. Güncel konum alınamazsa daha önce kaydedilmiş konum kullanılabilir.</p>
+          <ul>
+            <li><strong>Open-Meteo</strong>, bulunduğunuz yerin hava tahminini sağlamak için enlem ve boylamı alır. Ana ekran widget’ı, yeni bir konum taraması yapmadan cihazda kayıtlı koordinatlarla tahmini arka planda yenileyebilir. <a href="https://open-meteo.com/en/terms" rel="noreferrer">Open-Meteo’nun koşulları ve gizlilik bilgileri</a></li>
+            <li><strong>Geoapify</strong>, koordinatlardan şehir ve ilçe adını bulmak için kullanılabilir. Hava, gerektiğinde Android’in konum adı bulma hizmetinden de yararlanabilir. <a href="https://www.geoapify.com/privacy-policy/" rel="noreferrer">Geoapify gizlilik politikası</a></li>
+            <li><strong>Namaz vakitleri</strong>, konum ve tarihe göre cihazda hesaplanır. Hicrî tarih özelliği kullanıma sunulduğunda dönüşüm için Habibur’un takvim hizmetine yalnızca dönüştürülecek takvim tarihi gönderilir. İnternet isteklerinde hizmet sağlayıcılar IP adresi gibi bağlantı bilgilerini de işleyebilir.</li>
+          </ul>
+          <p>Konum iznini Android ayarlarından değiştirebilirsiniz. İzni kaldırmanız, önceden kaydedilmiş konumu cihazdan silmez. Konum olmadan da mevsim içeriklerine göz atabilirsiniz.</p>
+        </section>
+
+        <section>
+          <h2>Bildirimler ve Firebase</h2>
+          <p>Bildirimler açıkken Hava, Google Firebase Cloud Messaging (FCM) tarafından oluşturulan uygulamaya özgü bildirim belirtecini, enlem ve boylamı, varsa şehir ve ilçe adını, cihaz platformunu ve kayıt güncelleme zamanını Firebase Cloud Firestore’a gönderir. Hava’nın bildirim sunucusu bu kaydı, uygun bölgeye hava uyarıları ve uygulamaya ilişkin duyurular göndermek için kullanır.</p>
+          <p>Firebase Remote Config, özel günler gibi içerikleri uygulamaya ulaştırır. Firebase, bu hizmetlerin çalışması için uygulama kurulum tanımlayıcısı gibi teknik bilgileri işleyebilir. <a href="https://firebase.google.com/support/privacy" rel="noreferrer">Firebase gizlilik bilgileri</a></p>
+          <p>Bildirimleri Hava’nın <strong>Ayarlar</strong> menüsünden veya Android’in uygulama bildirim ayarlarından kapatabilirsiniz. Hava içindeki anahtarı kapattığınızda uygulama, FCM belirtecini geçersiz kılmayı ve bildirim kaydını kaldırmayı dener.</p>
+        </section>
+
+        <section>
+          <h2>Google AdMob reklamları</h2>
+          <p>Hava, Google AdMob reklam altyapısını içerir. İlk sürümde reklam gösterimi kapalıdır. Reklamların etkin olduğu sürümlerde Google Mobile Ads SDK’sı reklam sunmak, gösterimleri ölçmek ve geçersiz trafiği önlemek için IP adresi, reklam kimliği ve diğer cihaz veya uygulama tanımlayıcıları, uygulama ve reklam etkileşimleri ile teknik tanılama bilgilerini işleyebilir.</p>
+          <p>Google, IP adresinden yaklaşık bir konum çıkarabilir. Hava’nın tahmin almak için kullandığı GPS koordinatları reklam isteklerine eklenmez. Reklamların kişiselleştirilmesi cihaz ayarlarınıza ve geçerli gizlilik tercihlerinize bağlıdır. Android destekliyorsa reklam kimliğinizi cihazınızın gizlilik ayarlarından sıfırlayabilir veya silebilirsiniz.</p>
+          <ul>
+            <li><a href="https://policies.google.com/privacy?hl=tr" rel="noreferrer">Google gizlilik politikası</a></li>
+            <li><a href="https://policies.google.com/technologies/partner-sites?hl=tr" rel="noreferrer">Google’ın uygulamalardan aldığı bilgileri nasıl kullandığı</a></li>
+            <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noreferrer">Google Mobile Ads SDK veri açıklaması</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Verilerin saklanması ve silinmesi</h2>
+          <p>Son konum, tahmin önbelleği ve uygulama tercihleri cihazda saklanabilir. Bunları Android ayarlarından Hava’nın depolama verilerini temizleyerek veya uygulamayı kaldırarak silebilirsiniz. Hava, yukarıda açıklanan hizmetlere istek gönderirken HTTPS kullanır.</p>
+          <p>Sunucudaki bildirim kayıtları, abonelikleri yönetmek ve gönderim sorunlarını incelemek için tutulur. Uygulamayı kaldırmak veya cihazdaki verileri silmek, sunucuda ya da hizmet sağlayıcılarında önceden oluşmuş kayıtları kendiliğinden silmez. Hizmet sağlayıcıları, işledikleri bilgileri kendi politikalarına göre saklayabilir.</p>
+          <p>Bildirim kaydınız hakkında bilgi almak, düzeltme veya silme talebinde bulunmak ya da başka bir gizlilik sorusu sormak için <a href="mailto:techwithmonir@gmail.com">techwithmonir@gmail.com</a> adresinden Tech With M ile iletişime geçebilirsiniz. Talebinizle birlikte paylaştığınız bilgiler, talebinizi incelemek ve yanıtlamak için kullanılır.</p>
+        </section>
+      </main>
+
+      <footer>© 2026 Tech With M</footer>
+    </div>
+  </body>
+</html>
