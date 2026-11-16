@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Kilopix: Photo Compress Resize by Tech With M. Learn about 100% offline image conversion, photo privacy, zero network permissions, and data handling.">
+  <link rel="canonical" href="https://tech-with-m.github.io/privacy/kilopix/">
+  <title>Kilopix Privacy Policy | Tech With M</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f8f9fd;
+      --surface: #ffffff;
+      --text: #1b1e2e;
+      --muted: #4e556e;
+      --accent: #3a5bc7;
+      --accent-hover: #29449f;
+      --soft: #eef2ff;
+      --border: #dbe1f2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top right, var(--soft), transparent 38rem), var(--bg);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.8;
+      overflow-wrap: anywhere;
+    }
+    a { color: var(--accent); text-underline-offset: .25em; }
+    a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    .skip-link {
+      position: absolute;
+      top: -5rem;
+      left: 1rem;
+      padding: .7rem 1rem;
+      background: var(--surface);
+      z-index: 1;
+    }
+    .skip-link:focus { top: 1rem; }
+    .shell {
+      width: min(100% - 2rem, 920px);
+      margin: auto;
+      padding: 2rem 0 4rem;
+    }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      color: var(--text);
+    }
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 2.7rem;
+      height: 2.7rem;
+      border-radius: .8rem;
+      background: linear-gradient(135deg, #3a5bc7, #1d3a9e);
+      color: #ffffff;
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .03em;
+      box-shadow: 0 0.5rem 1.5rem rgba(58, 91, 199, 0.25);
+    }
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 750;
+      letter-spacing: .12em;
+      font-size: .8rem;
+      text-transform: uppercase;
+      margin: 0 0 .5rem;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.2;
+      letter-spacing: -.035em;
+      margin: .5rem 0 1rem;
+    }
+    h2 {
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
+      line-height: 1.4;
+      margin: 0 0 1rem;
+      letter-spacing: -.02em;
+    }
+    p, li { color: var(--muted); }
+    strong { color: var(--text); }
+    .intro {
+      max-width: 760px;
+      font-size: 1.08rem;
+      margin: 0 0 1rem;
+    }
+    .meta {
+      font-size: .9rem;
+      color: var(--muted);
+      margin: 0 0 2rem;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: .95em;
+      padding: .15em .35em;
+      border-radius: .35rem;
+      background: var(--soft);
+      border: 1px solid var(--border);
+    }
+    .summary {
+      margin: 2rem 0;
+      padding: 1.4rem;
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+    }
+    .summary strong {
+      display: block;
+      margin-bottom: .35rem;
+      font-size: 1.05rem;
+    }
+    .summary p { margin: 0; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .7rem 1.4rem;
+      margin: 1.5rem 0;
+    }
+    main {
+      border: 1px solid var(--border);
+      border-radius: 1.2rem;
+      background: var(--surface);
+      overflow: hidden;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.04);
+    }
+    section {
+      padding: 2rem;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 1rem;
+    }
+    section:last-child { border: 0; }
+    section p:first-of-type { margin-top: 0; }
+    section p:last-child, section ul:last-child { margin-bottom: 0; }
+    ul {
+      margin: 1rem 0;
+      padding-left: 1.3rem;
+    }
+    li + li { margin-top: .7rem; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: .25rem .7rem;
+      border-radius: 2rem;
+      font-size: .78rem;
+      font-weight: 700;
+      background: rgba(27, 109, 58, 0.12);
+      color: #1b6d3a;
+      border: 1px solid rgba(27, 109, 58, 0.25);
+      margin-bottom: 1rem;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: .9rem;
+      color: var(--muted);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d111d;
+        --surface: #141928;
+        --text: #edf1ff;
+        --muted: #9ba4c0;
+        --accent: #7a9cff;
+        --accent-hover: #9bb5ff;
+        --soft: #1c243d;
+        --border: #293454;
+      }
+      .badge {
+        background: rgba(181, 241, 197, 0.15);
+        color: #8ce1a6;
+        border-color: rgba(181, 241, 197, 0.3);
+      }
+      main {
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+      }
+    }
+    @media (max-width: 600px) {
+      .shell { width: calc(100% - 1.25rem); padding-top: 1.2rem; }
+      section { padding: 1.3rem; }
+      .topbar { margin-bottom: 2rem; }
+    }
+    @media print {
+      :root {
+        --bg: white;
+        --surface: white;
+        --text: black;
+        --muted: #222;
+        --accent: #111;
+        --soft: white;
+        --border: #aaa;
+      }
+      .shell { width: 100%; padding: 0; }
+      .topbar, nav, .skip-link { display: none; }
+      main { overflow: visible; box-shadow: none; border-color: #ccc; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#policy">Skip to privacy policy</a>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Tech With M home">
+        <span class="mark" aria-hidden="true">KP</span>
+        <span>Kilopix</span>
+      </a>
+      <a href="/">Tech With M</a>
+    </header>
+
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>Kilopix Privacy Policy</h1>
+    <p class="intro">
+      This Privacy Policy describes how <strong>Kilopix: Photo Compress Resize</strong>, developed by
+      <strong>Tech With M / Md Moniruzzaman</strong>, handles your photos, image metadata, and device information.
+    </p>
+    <p class="meta">
+      Android Application ID: <code>com.tech_with_m.kilopix</code><br>
+      Effective and last updated: <time datetime="2026-11-16">November 16, 2026</time>
+    </p>
+
+    <aside class="summary" aria-label="Privacy overview">
+      <div class="badge">&#128274; 100% Offline &amp; On-Device</div>
+      <strong>Your photos never leave your device.</strong>
+      <p>
+        Kilopix is built from the ground up as a private, offline tool. The production application requests zero
+        network permissions, contains no analytics or tracking code, shows no advertisements, requires no user
+        account, and does not operate any remote servers or cloud databases. Every conversion, compression, and
+        resize happens strictly on your Android device.
+      </p>
+    </aside>
+
+    <nav aria-label="Privacy policy sections">
+      <a href="#about">1. About &amp; Architecture</a>
+      <a href="#photos">2. Photos &amp; Files</a>
+      <a href="#metadata">3. Metadata Privacy</a>
+      <a href="#permissions">4. Device Permissions</a>
+      <a href="#sharing">5. Sharing</a>
+      <a href="#analytics">6. No Analytics or Ads</a>
+      <a href="#retention">7. Retention &amp; Deletion</a>
+      <a href="#contact">8. Contact</a>
+    </nav>
+
+    <main id="policy" tabindex="-1">
+      <section id="about">
+        <h2>1. About Kilopix &amp; Offline Architecture</h2>
+        <p>
+          Kilopix is an offline image utility designed to convert image formats (JPEG, PNG, WEBP, HEIC), compress
+          file sizes (by percentage or to an exact target KB), and resize image dimensions.
+        </p>
+        <p>
+          The core architecture is entirely self-contained:
+        </p>
+        <ul>
+          <li><strong>Zero Network Access:</strong> The production application does not declare the <code>android.permission.INTERNET</code> permission. It has no technical capability to connect to the Internet, send outbound HTTP/HTTPS requests, or upload any files.</li>
+          <li><strong>No Cloud Servers:</strong> Tech With M does not host or operate any upload servers, processing APIs, or cloud storage for Kilopix.</li>
+          <li><strong>No User Accounts:</strong> You do not register, log in, or provide any identity or contact details to use the application.</li>
+        </ul>
+      </section>
+
+      <section id="photos">
+        <h2>2. Photos and Files You Select</h2>
+        <p>
+          Kilopix only interacts with images that you explicitly select using Android&apos;s standard system pickers
+          (the Android Photo Picker or the Storage Access Framework document picker), or when you choose to share
+          photos into Kilopix from another app using Android&apos;s system Share sheet.
+        </p>
+        <ul>
+          <li><strong>No Background Scanning:</strong> Kilopix does not scan your gallery, read unselected photos, or index your file system.</li>
+          <li><strong>Non-Destructive Processing:</strong> Kilopix never modifies, overwrites, or deletes your original source images.</li>
+          <li><strong>Saved Output:</strong> Converted and compressed photos are saved as new files in your device&apos;s standard public picture storage (under the dedicated <code>Pictures/Kilopix</code> album) using Android&apos;s MediaStore API so that they appear in your favorite gallery app.</li>
+        </ul>
+      </section>
+
+      <section id="metadata">
+        <h2>3. EXIF Metadata &amp; Location Privacy</h2>
+        <p>
+          Digital photos often contain embedded EXIF metadata, which can include the capture date, camera model, lens
+          settings, and precise GPS location coordinates. Kilopix gives you full, transparent control over this
+          metadata before you process any photo:
+        </p>
+        <ul>
+          <li><strong>Strip All Metadata:</strong> Completely removes all EXIF and header information for maximum privacy.</li>
+          <li><strong>Keep All Except Location:</strong> Preserves technical photo attributes (orientation, capture date, camera model) while automatically stripping sensitive GPS location coordinates.</li>
+          <li><strong>Keep All Metadata:</strong> Preserves all original metadata tags.</li>
+        </ul>
+        <p>
+          Kilopix itself does not read, log, or track your physical location, and does not request Android location permissions.
+        </p>
+      </section>
+
+      <section id="permissions">
+        <h2>4. Device Permissions and System Capabilities</h2>
+        <p>
+          The production release of Kilopix adheres to a strict zero-permission model:
+        </p>
+        <ul>
+          <li><strong>No Internet Permission:</strong> The app cannot access the Internet or mobile data.</li>
+          <li><strong>No Location Permission:</strong> The app does not request <code>ACCESS_FINE_LOCATION</code> or <code>ACCESS_COARSE_LOCATION</code>.</li>
+          <li><strong>No Broad Storage Permissions:</strong> The app does not request <code>MANAGE_EXTERNAL_STORAGE</code> or legacy storage access. It operates within Android&apos;s modern Scoped Storage sandbox.</li>
+          <li><strong>No Camera or Microphone Permission:</strong> Kilopix does not access your camera or audio hardware.</li>
+          <li><strong>No Contacts or Identity Permission:</strong> Kilopix does not access your contacts, accounts, or phone identity.</li>
+        </ul>
+      </section>
+
+      <section id="sharing">
+        <h2>5. Sharing and FileProvider</h2>
+        <p>
+          Kilopix includes an optional <strong>Share</strong> action on the results screen allowing you to send
+          converted images directly to other applications (such as email, messaging, or cloud storage apps) via
+          Android&apos;s system Share sheet.
+        </p>
+        <p>
+          When you invoke Share, Kilopix uses Android&apos;s secure <code>FileProvider</code>
+          (<code>com.tech_with_m.kilopix.fileprovider</code>) to grant temporary, read-only content access to the
+          specific cached output image only for the duration of that share action. Once received by another app,
+          the copy is subject to that destination application&apos;s own privacy policy.
+        </p>
+      </section>
+
+      <section id="analytics">
+        <h2>6. No Advertising, Analytics, or Tracking</h2>
+        <p>
+          We respect your privacy:
+        </p>
+        <ul>
+          <li><strong>No Advertising:</strong> Kilopix contains no advertising SDKs, banner ads, interstitial ads, or sponsored content.</li>
+          <li><strong>No Analytics:</strong> The app contains no third-party analytics libraries (such as Google Analytics, Firebase Analytics, Mixpanel, or similar services).</li>
+          <li><strong>No Advertising Identifiers:</strong> Kilopix does not collect or transmit the Android Advertising ID (AAID) or App Set ID.</li>
+          <li><strong>No Sale of Data:</strong> Because we do not collect any data, we never sell, rent, or share personal information with data brokers or third parties.</li>
+        </ul>
+      </section>
+
+      <section id="retention">
+        <h2>7. Data Retention and Deletion</h2>
+        <ul>
+          <li><strong>Temporary Processing Cache:</strong> While converting or compressing photos, Kilopix temporarily stores working copies in the app&apos;s private internal cache directory (<code>cacheDir/out/</code>). These temporary files are cleared automatically when batch processing completes or when you clear app data.</li>
+          <li><strong>Saved Output Photos:</strong> Photos you choose to save into <code>Pictures/Kilopix</code> are permanent files in your device&apos;s media storage. You can view, organize, or delete them at any time using your preferred Gallery or file manager app.</li>
+          <li><strong>Local Preferences:</strong> User preferences (such as your chosen default format, compression preset, metadata policy, or UI theme) are stored in your device&apos;s private <code>SharedPreferences</code>.</li>
+          <li><strong>Uninstalling:</strong> Uninstalling the application or clearing its storage through Android Settings immediately removes all internal app cache and preference data.</li>
+        </ul>
+        <p>
+          Because Tech With M does not operate a user account system or remote database for Kilopix, there is no
+          online account or cloud data to delete.
+        </p>
+      </section>
+
+      <section id="security">
+        <h2>8. Data Protection &amp; Security</h2>
+        <p>
+          Kilopix relies on Android&apos;s security sandbox and platform protections. All file operations occur
+          in app-private storage or via standard platform content resolvers. App backups to Google Drive are disabled
+          (<code>android:allowBackup="false"</code>) to ensure temporary working images are not uploaded during
+          automatic device backups.
+        </p>
+      </section>
+
+      <section id="children">
+        <h2>9. Children&apos;s Privacy</h2>
+        <p>
+          Kilopix does not collect personal information from anyone, including children under the age of 13.
+          The app is an offline photo utility suitable for general audiences.
+        </p>
+      </section>
+
+      <section id="website">
+        <h2>10. Website Hosting Disclosures</h2>
+        <p>
+          This privacy policy page is hosted publicly on GitHub Pages. Tech With M does not place advertising,
+          analytics trackers, or cookies on this website. GitHub may independently collect server logs (including
+          visitor IP addresses) for operational security purposes under the
+          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer">GitHub Privacy Statement</a>.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>11. Changes to this Policy</h2>
+        <p>
+          If we update Kilopix&apos;s functionality or data practices in future versions, this policy will be
+          updated accordingly with an updated effective date.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>12. Contact Information</h2>
+        <p>
+          If you have questions, feedback, or concerns regarding this Privacy Policy or Kilopix, please contact:
+        </p>
+        <p>
+          <strong>Developer:</strong> Tech With M / Md Moniruzzaman<br>
+          <strong>Application:</strong> Kilopix: Photo Compress Resize (<code>com.tech_with_m.kilopix</code>)<br>
+          <strong>Email:</strong> <a href="mailto:techwithmonir@gmail.com">techwithmonir@gmail.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      &copy; 2026 Tech With M. Kilopix Privacy Policy.
+    </footer>
+  </div>
+</body>
+</html>
