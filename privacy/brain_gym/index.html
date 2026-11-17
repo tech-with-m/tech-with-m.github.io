@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Brain Gym: Daily Brain Training by Tech With M. Learn about our offline-first architecture, local on-device progress storage, Google AdMob advertising, and data safety.">
+  <link rel="canonical" href="https://tech-with-m.github.io/privacy/brain_gym/">
+  <title>Brain Gym Privacy Policy | Tech With M</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #4f46e5;
+      --accent-hover: #4338ca;
+      --soft: #eef2ff;
+      --border: #e2e8f0;
+      --badge-bg: rgba(79, 70, 229, 0.1);
+      --badge-text: #4338ca;
+      --badge-border: rgba(79, 70, 229, 0.25);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top right, var(--soft), transparent 38rem), var(--bg);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.8;
+      overflow-wrap: anywhere;
+    }
+    a { color: var(--accent); text-underline-offset: .25em; }
+    a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    .skip-link {
+      position: absolute;
+      top: -5rem;
+      left: 1rem;
+      padding: .7rem 1rem;
+      background: var(--surface);
+      z-index: 1;
+    }
+    .skip-link:focus { top: 1rem; }
+    .shell {
+      width: min(100% - 2rem, 920px);
+      margin: auto;
+      padding: 2.5rem 0 4.5rem;
+    }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      color: var(--text);
+    }
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: .85rem;
+      background: linear-gradient(135deg, #4f46e5, #3730a3);
+      color: #ffffff;
+      font-size: .95rem;
+      font-weight: 800;
+      letter-spacing: .03em;
+      box-shadow: 0 0.5rem 1.5rem rgba(79, 70, 229, 0.28);
+    }
+    .home-link {
+      color: var(--muted);
+      font-size: .92rem;
+      text-decoration: none;
+    }
+    .home-link:hover {
+      color: var(--text);
+    }
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 750;
+      letter-spacing: .12em;
+      font-size: .8rem;
+      text-transform: uppercase;
+      margin: 0 0 .5rem;
+    }
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      line-height: 1.2;
+      letter-spacing: -.035em;
+      margin: .5rem 0 1rem;
+    }
+    h2 {
+      font-size: clamp(1.25rem, 3vw, 1.6rem);
+      line-height: 1.4;
+      margin: 0 0 1rem;
+      letter-spacing: -.02em;
+    }
+    p, li { color: var(--muted); }
+    strong { color: var(--text); }
+    .intro {
+      max-width: 780px;
+      font-size: 1.1rem;
+      margin: 0 0 1rem;
+    }
+    .meta {
+      font-size: .9rem;
+      color: var(--muted);
+      margin: 0 0 2rem;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      padding: .3rem .85rem;
+      border-radius: 2rem;
+      font-size: .82rem;
+      font-weight: 700;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      border: 1px solid var(--badge-border);
+      margin-bottom: 1.25rem;
+    }
+    .summary {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-radius: 1.1rem;
+    }
+    .summary strong {
+      display: block;
+      margin-bottom: .4rem;
+      font-size: 1.08rem;
+    }
+    .summary p { margin: 0; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .7rem 1.4rem;
+      margin: 2rem 0 2.5rem;
+      padding: 1rem 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+    }
+    nav a {
+      font-size: .92rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    main {
+      border: 1px solid var(--border);
+      border-radius: 1.25rem;
+      background: var(--surface);
+      overflow: hidden;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.04);
+    }
+    section {
+      padding: 2.25rem;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 1.5rem;
+    }
+    section:last-child { border: 0; }
+    section p:first-of-type { margin-top: 0; }
+    section p:last-child, section ul:last-child { margin-bottom: 0; }
+    ul {
+      margin: 1rem 0;
+      padding-left: 1.4rem;
+    }
+    li + li { margin-top: .75rem; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: .92em;
+      padding: .15em .4em;
+      border-radius: .35rem;
+      background: var(--soft);
+      border: 1px solid var(--border);
+    }
+    .footer {
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: .9rem;
+      color: var(--muted);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #090d16;
+        --surface: #111827;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --accent: #818cf8;
+        --accent-hover: #a5b4fc;
+        --soft: #1e1b4b;
+        --border: #1f293d;
+        --badge-bg: rgba(129, 140, 248, 0.15);
+        --badge-text: #c7d2fe;
+        --badge-border: rgba(129, 140, 248, 0.3);
+      }
+      main {
+        box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.35);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .shell {
+        width: min(100% - 1.25rem, 920px);
+        padding-top: 1.5rem;
+      }
+      .topbar { margin-bottom: 2rem; }
+      section { padding: 1.5rem; }
+      .summary { padding: 1.25rem; }
+      nav { padding: .85rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="https://tech-with-m.github.io/" aria-label="Tech With M home">
+        <span class="mark" aria-hidden="true">BG</span>
+        <span>Brain Gym</span>
+      </a>
+      <a class="home-link" href="https://tech-with-m.github.io/">Tech With M</a>
+    </header>
+
+    <div class="hero">
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>Brain Gym Privacy Policy</h1>
+      <span class="badge">🧠 100% Offline-First Cognitive Training</span>
+      <p class="intro">
+        This Privacy Policy explains how the Brain Gym Android application (<code>com.tech_with_m.brain_gym</code>),
+        developed by <strong>Tech With M</strong>, collects, uses, and safeguards information when you train your
+        brain across our cognitive mini-games, track your daily challenges, and use our ad-supported features.
+      </p>
+      <p class="meta">Effective and last updated: November 17, 2026</p>
+    </div>
+
+    <aside class="summary">
+      <strong>The Short Version</strong>
+      <p>
+        Brain Gym is fundamentally an offline-first app. We do not require account registration, login, or any personal
+        profile. All puzzle generation, scores, statistics, streak counters, streak freezes, and unlocked achievements
+        are processed and stored strictly on your local device in a private SQLite database. The app displays non-intrusive
+        Google AdMob advertisements and offers Google User Messaging Platform (UMP) consent controls. We never collect,
+        sell, or rent your personal identifiable information.
+      </p>
+    </aside>
+
+    <nav aria-label="Privacy Policy Sections">
+      <a href="#overview">1. Core Architecture</a>
+      <a href="#data-stored">2. On-Device Data</a>
+      <a href="#advertising">3. AdMob & Consent</a>
+      <a href="#diagnostics">4. Diagnostics & Analytics</a>
+      <a href="#permissions">5. Android Permissions</a>
+      <a href="#retention">6. Data Retention & Deletion</a>
+      <a href="#security">7. Security</a>
+      <a href="#children">8. Children's Privacy</a>
+      <a href="#changes">9. Policy Changes</a>
+      <a href="#contact">10. Contact Us</a>
+    </nav>
+
+    <main id="content">
+      <section id="overview">
+        <h2>1. Core Architecture & Offline-First Principles</h2>
+        <p>
+          Brain Gym is engineered from the ground up to respect user privacy and function independently of the internet:
+        </p>
+        <ul>
+          <li><strong>No User Account:</strong> You can play all five brain games (Quick Math, Memory Grid, Number Sequence, Pattern Recognition, Reaction Time), complete Daily Challenges, view analytics graphs, and maintain streaks without registering an account, providing an email, or setting a password.</li>
+          <li><strong>100% On-Device Game Generation:</strong> All puzzle equations, sequence algorithms, matrix patterns, and reaction trials are generated locally on your processor using deterministic algorithms without communicating with any external game server.</li>
+          <li><strong>Zero Data Selling:</strong> Tech With M does not sell, broker, or rent your personal data to data brokers or advertisers.</li>
+        </ul>
+      </section>
+
+      <section id="data-stored">
+        <h2>2. Information Stored Locally on Your Device</h2>
+        <p>
+          Brain Gym saves the following gameplay and configuration information directly inside your Android device's private, sandboxed app storage:
+        </p>
+        <ul>
+          <li><strong>Session History & Scores:</strong> Game type, difficulty level, session timestamp, final score, star rating (1 to 3 stars), accuracy percentage, round response times (in milliseconds), number of questions answered, and hints consumed.</li>
+          <li><strong>Streaks & Daily Challenges:</strong> Daily challenge completion records by calendar date, consecutive active days (current streak and personal best streak), and earned Streak Freezes banked (up to 2).</li>
+          <li><strong>User Preferences:</strong> Sound effect volume and toggle, haptic feedback toggle, color theme (System Default, Light, or Dark), selected app language, and preferred daily reminder notification time.</li>
+        </ul>
+        <p>
+          This data remains strictly on your device and is never uploaded to any proprietary server operated by Tech With M.
+        </p>
+      </section>
+
+      <section id="advertising">
+        <h2>3. Google AdMob Advertising & Consent Controls</h2>
+        <p>
+          Brain Gym displays non-intrusive banner ads at the bottom of non-gameplay screens, occasional interstitial ads
+          between gameplay sessions (strictly respecting frequency caps of no more than 1 per 2 minutes), and optional
+          rewarded video ads that you can voluntarily choose to watch to earn hints or restore a streak.
+        </p>
+        <p>
+          To deliver these advertisements, the app integrates the <strong>Google Mobile Ads SDK (AdMob)</strong>.
+          Depending on your location and consent choices, Google may process:
+        </p>
+        <ul>
+          <li><strong>Device & Network Identifiers:</strong> Android Advertising ID (GAID/AAID), IP address (used to infer coarse, city-level geographic region for localized ads), device brand, model, and screen specifications.</li>
+          <li><strong>Interaction Data:</strong> Ad views, clicks, and impressions used for measurement and fraud prevention.</li>
+        </ul>
+        <p>
+          <strong>User Consent & Privacy Choices:</strong> For users located in the European Economic Area (EEA), the United Kingdom,
+          Switzerland, and applicable US states, Brain Gym integrates Google's <strong>User Messaging Platform (UMP)</strong>.
+          You are presented with a consent dialog upon initial launch to accept, reject, or customize ad preferences. You can
+          revisit and modify these choices at any time directly inside the app by opening <strong>Settings &gt; Privacy Choices</strong>.
+        </p>
+        <p>
+          Gameplay is never blocked by ad availability or privacy consent choices. For more details on Google's advertising practices, please review:
+        </p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+          <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a></li>
+          <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">Google Mobile Ads SDK Data Disclosure</a></li>
+        </ul>
+      </section>
+
+      <section id="diagnostics">
+        <h2>4. Diagnostics & Crash Reporting</h2>
+        <p>
+          To diagnose software anomalies, ensure compatibility across Android versions, and prevent game crashes,
+          Brain Gym may utilize <strong>Firebase Crashlytics</strong> and aggregated <strong>Firebase Analytics</strong>:
+        </p>
+        <ul>
+          <li><strong>Crash Logs:</strong> Technical stack traces, device hardware model, Android OS version, and memory state at the moment of an unexpected termination. Crash logs never contain puzzle content or user input.</li>
+          <li><strong>Aggregated Usage Metrics:</strong> Pseudonymous event tallies (e.g., number of sessions started, daily set completed) to understand game balance and difficulty scaling across player cohorts.</li>
+        </ul>
+        <p>
+          When the app runs in an environment where Google Play Services or Firebase are absent, the application gracefully
+          falls back to local no-op implementations with zero performance impact or degradation of features.
+        </p>
+      </section>
+
+      <section id="permissions">
+        <h2>5. Android Permissions & System Access</h2>
+        <p>
+          Brain Gym requests only the minimal permissions required to provide its features and adhere to modern Android platform guidelines:
+        </p>
+        <ul>
+          <li><code>android.permission.INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>: Required to check connectivity for AdMob ad requests, load privacy consent forms via UMP, and deliver crash reports. All mini-games continue to operate seamlessly when no network is present.</li>
+          <li><code>android.permission.POST_NOTIFICATIONS</code>: Required on Android 13 (API level 33) and above to send you a daily brain training reminder at your chosen time. You can enable or disable reminders at any time in the app's Settings screen or in Android system notification settings.</li>
+          <li><code>android.permission.VIBRATE</code>: Powers subtle, realistic tactile haptic feedback during game interactions (such as grid selection and correct/wrong answers) on supported devices.</li>
+          <li><code>com.google.android.gms.permission.AD_ID</code>: Standard permission declared by the Google Mobile Ads SDK to read the Android Advertising Identifier where allowed by user settings.</li>
+        </ul>
+        <p>
+          <strong>Permissions We Never Request:</strong> Brain Gym does not access your camera, microphone, GPS/precise location,
+          contacts, phone logs, calendar, or external shared storage.
+        </p>
+      </section>
+
+      <section id="retention">
+        <h2>6. Data Retention, Control & Deletion</h2>
+        <p>
+          Because your gameplay data is stored exclusively on your device, you maintain complete sovereignty over your information:
+        </p>
+        <ul>
+          <li><strong>In-App Data Reset:</strong> You can permanently purge all stored game sessions, statistics, streaks, and unlocked achievements at any time by going to <strong>Settings &gt; Reset Local Data</strong> and confirming the prompt.</li>
+          <li><strong>Uninstalling the App:</strong> Removing Brain Gym via Android App Settings or Google Play automatically wipes the app's local SQLite database (<code>braingym.db</code>), SharedPreferences, DataStore, and cached files from your device.</li>
+          <li><strong>No Server-Side Profile:</strong> Because Tech With M does not operate a remote user account database for Brain Gym, there is no remote account or cloud profile to delete.</li>
+          <li><strong>Support Correspondence:</strong> If you contact us via email for customer support, we retain your email and correspondence solely to resolve your issue. You may request the deletion of your support email records at any time by emailing us.</li>
+        </ul>
+      </section>
+
+      <section id="security">
+        <h2>7. Security</h2>
+        <p>
+          We implement strong platform-level safeguards to protect your data:
+        </p>
+        <ul>
+          <li><strong>App Sandboxing:</strong> All local databases and preferences are stored within the secure, private Android application sandbox, preventing unauthorized access by other installed applications.</li>
+          <li><strong>Encrypted In-Transit:</strong> All network traffic to Google AdMob and Firebase endpoints is encrypted in transit using industry-standard Transport Layer Security (TLS / HTTPS).</li>
+        </ul>
+      </section>
+
+      <section id="children">
+        <h2>8. Children's Privacy</h2>
+        <p>
+          Brain Gym is designed as a mental training application for a general audience. The app is not directed to children
+          under the age of 13 (or under the age of 16 in certain European jurisdictions). We do not knowingly collect personal
+          information from children. If you are a parent or guardian and believe that your child has provided personal information
+          through third-party advertising SDKs without your consent, please contact us immediately so we can take appropriate action.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>9. Changes to This Privacy Policy</h2>
+        <p>
+          We may periodically update this Privacy Policy to reflect app improvements, new game additions, or evolving legal
+          and regulatory standards. When changes occur, the updated policy will be published at this URL with a revised
+          "Effective and last updated" date. We encourage you to review this policy periodically.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>10. Contact Us</h2>
+        <p>
+          Brain Gym is developed by <strong>Tech With M</strong>. If you have any questions, feedback, or concerns
+          regarding this Privacy Policy or your privacy while using Brain Gym, please reach out to us at:
+        </p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:techwithmonir@gmail.com">techwithmonir@gmail.com</a><br>
+          <strong>Developer Website:</strong> <a href="https://tech-with-m.github.io/">https://tech-with-m.github.io/</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Tech With M. All rights reserved.</p>
+      <p>Brain Gym Privacy Policy &bull; <a href="https://tech-with-m.github.io/">tech-with-m.github.io</a></p>
+    </footer>
+  </div>
+</body>
+</html>
